@@ -1,6 +1,6 @@
 # Published run evidence
 
-The paper source and embedded figures come from Overleaf revision `c7b5089760e81f1e062d49ffa07682bf24c0f74d`. The original experiment record is commit `b2aab889d95977cb830200e2f50c7ae424d5ddf3` in the [historical archive](https://github.com/ryeii/HBF-Research). The archive requires repository access. Figure regeneration and the full simulation use only this checkout and the public dependencies installed by the setup script.
+The paper source and embedded figures come from Overleaf revision `c7b5089760e81f1e062d49ffa07682bf24c0f74d`. The manuscript's artifact link was updated for this release. The original experiment record is commit `b2aab889d95977cb830200e2f50c7ae424d5ddf3` in the [historical archive](https://github.com/ryeii/HBF-Research). The archive requires repository access. Figure regeneration and the full simulation use only this checkout and the public dependencies installed by the setup script.
 
 | Data | Used for |
 | --- | --- |
