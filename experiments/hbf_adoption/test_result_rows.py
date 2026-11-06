@@ -7,6 +7,10 @@ from run_validation import ROOT,fingerprint
 
 
 class CorrectionIntegrity(unittest.TestCase):
+    def setUp(self):
+        self.scratch = ROOT/'.cache/hbf-adoption'
+        self.scratch.mkdir(parents=True, exist_ok=True)
+
     def fixture(self,root):
         central=root/'central';central.mkdir();patch=root/'patch';patch.mkdir()
         row=dict(model='m',gpu='g',workload='w',design_id='d',seed=17,view='fixed_users',status='simulated_projection')
@@ -17,7 +21,7 @@ class CorrectionIntegrity(unittest.TestCase):
         return central,patch
 
     def test_lineage_is_checked_before_replacing_a_trajectory(self):
-        with tempfile.TemporaryDirectory(dir=ROOT/'.cache/hbf-adoption') as tmp:
+        with tempfile.TemporaryDirectory(dir=self.scratch) as tmp:
             central,patch=self.fixture(Path(tmp));c=Corrections(patch)
             row=c.load(central)[0];c.complete()
             self.assertEqual(row['_run_directory'],str(patch))
@@ -26,7 +30,7 @@ class CorrectionIntegrity(unittest.TestCase):
             with self.assertRaises(ValueError):Corrections(patch)
 
     def test_unused_correction_cannot_pass_coverage(self):
-        with tempfile.TemporaryDirectory(dir=ROOT/'.cache/hbf-adoption') as tmp:
+        with tempfile.TemporaryDirectory(dir=self.scratch) as tmp:
             _,patch=self.fixture(Path(tmp));c=Corrections(patch)
             with self.assertRaises(ValueError):c.complete()
 
