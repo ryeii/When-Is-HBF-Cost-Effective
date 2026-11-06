@@ -1,0 +1,16 @@
+Boundary audit kimi_k2-h200 corrected rows 0
+Boundary audit kimi_k2-rtx4090 corrected rows 88
+Boundary audit deepseek_v3-h200 corrected rows 88
+Boundary audit deepseek_v3-rtx4090 corrected rows 118
+Boundary audit llama31_405b-h200 corrected rows 118
+Boundary audit llama31_405b-rtx4090 corrected rows 196
+Boundary audit qwen3_235b_a22b-h200 corrected rows 203
+Boundary audit qwen3_235b_a22b-rtx4090 corrected rows 270
+Boundary audit llama31_70b-h200 corrected rows 294
+Boundary audit llama31_70b-rtx4090 corrected rows 310
+Boundary audit qwen3_32b-h200 corrected rows 310
+Boundary audit qwen3_32b-rtx4090 corrected rows 397
+Boundary audit qwen3_30b_a3b-h200 corrected rows 397
+Boundary audit qwen3_30b_a3b-rtx4090 corrected rows 453
+Boundary audit qwen3_8b-h200 corrected rows 453
+Boundary audit qwen3_8b-rtx4090 corrected rows 539

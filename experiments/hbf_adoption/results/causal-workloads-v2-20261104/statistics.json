@@ -1,0 +1,81 @@
+{
+  "counts": {
+    "unique_rounds": 356647,
+    "source_rounds": 357161,
+    "source_tools": 432510,
+    "identical_normalized_duplicate_rounds": 514,
+    "sessions": 4265,
+    "root": 4265,
+    "token_accounting_mismatches": 0,
+    "parallel_tool_barrier": 266942,
+    "model_switches": 132,
+    "input_length_decreases": 7867,
+    "human_gap_proxy": 37173,
+    "unresolved": 48267
+  },
+  "transition_statuses": {
+    "scenario": 271207,
+    "endpoint_uncertainty_not_validated": 37173,
+    "tool_dependency_not_recoverable_from_immediate_predecessor": 43213,
+    "missing_input_dependency": 5046,
+    "overlapping_human_turn_endpoints": 8
+  },
+  "model_rounds": {
+    "claude-opus-4-6": 16852,
+    "claude-opus-4-7": 88078,
+    "claude-opus-4-5-20251101": 408,
+    "codex-auto-review": 3267,
+    "claude-haiku-4-5-20251001": 11040,
+    "gpt-5.5": 103088,
+    "claude-sonnet-4-6": 10961,
+    "claude-sonnet-4-5-20250929": 1169,
+    "gpt-5.1-codex-max": 2653,
+    "gpt-5.2-codex": 7436,
+    "gpt-5.4": 56480,
+    "claude-opus-4-8": 10869,
+    "gpt-5.3-codex": 29715,
+    "gpt-5.1-codex-mini": 15,
+    "gpt-5-codex": 5605,
+    "claude-opus-4-1-20250805": 360,
+    "claude-sonnet-4-20250514": 87,
+    "gpt-5": 1728,
+    "gpt-5.3-codex-spark": 3683,
+    "gpt-5.1-codex": 1342,
+    "gpt-5.4-mini": 295,
+    "gpt-5.1": 760,
+    "gpt-5.2": 755,
+    "null": 1
+  },
+  "split_rounds": {
+    "development": 276359,
+    "heldout_workload": 80288
+  },
+  "input_tokens": {
+    "mean": 153329.05419083856,
+    "p50": 123895.0,
+    "p95": 402199.10000000027,
+    "p99": 822969.3199999988,
+    "max": 999888
+  },
+  "output_tokens": {
+    "mean": 522.9550367730557,
+    "p50": 214.0,
+    "p95": 1992.0,
+    "p99": 5042.0,
+    "max": 64000
+  },
+  "reported_prefix_fraction": {
+    "mean": 0.9416522819092671,
+    "p50": 0.9924042662048881,
+    "p95": 0.9991262069698612,
+    "p99": 0.9996202383933884,
+    "max": 0.9999988453242561
+  },
+  "relative_gap_seconds": {
+    "mean": 398.253642681615,
+    "p50": 0.4590001106262207,
+    "p95": 262.1316000461577,
+    "p99": 2187.7300199842293,
+    "max": 2703598.5769999027
+  }
+}

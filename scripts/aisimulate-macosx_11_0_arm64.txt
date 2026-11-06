@@ -1,0 +1,1 @@
+https://files.pythonhosted.org/packages/fd/c8/15b24e41adb12181b26e521492a50312a16eace754b88cc7fd58081bfb6d/aisimulate-0.12.0.dev2-cp311-abi3-macosx_11_0_arm64.whl#sha256=7f3a60016227739b8705eb5d4b089249dd15d7c854c3be12a21303bb1844086c

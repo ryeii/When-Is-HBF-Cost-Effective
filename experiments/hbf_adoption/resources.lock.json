@@ -1,0 +1,103 @@
+{
+  "schema": "hbf-adoption.resources.v1",
+  "resources": [
+    {
+      "path": ".cache/hbf-adoption/resources/Frontier",
+      "commit": "98b680a24f676b5381c334f49a9729ea45847ee0",
+      "status": "",
+      "remote": "https://github.com/NetX-lab/Frontier.git",
+      "license_files": [
+        {
+          "path": ".cache/hbf-adoption/resources/Frontier/LICENSE",
+          "bytes": 1078,
+          "sha256": "b5cd1fa31e9f56d74ee96f46449c326340a7a335f66f1970471e6fbeb1f057a8"
+        }
+      ]
+    },
+    {
+      "path": ".cache/hbf-adoption/resources/TraceLab",
+      "commit": "5c6550b0d08beff983e9159fe2575e7a2334c8c1",
+      "status": "?? syfi_coding_trace.v0.0.1.jsonl.gz",
+      "remote": "https://github.com/uw-syfi/TraceLab.git",
+      "license_files": [
+        {
+          "path": ".cache/hbf-adoption/resources/TraceLab/LICENSE",
+          "bytes": 11365,
+          "sha256": "122da5085778889f4c36d898b7f7998345876cb75345d66b1418ae5aff0d1843"
+        },
+        {
+          "path": ".cache/hbf-adoption/resources/TraceLab/LICENSE-DATASET.md",
+          "bytes": 2061,
+          "sha256": "1e96a0ec55f98ee0e4e2432626c0201104ebfb7f98cecf0a31d5313ddad92e9a"
+        }
+      ]
+    },
+    {
+      "path": ".cache/hbf-adoption/resources/doolyprof",
+      "commit": "3a0cab175d1914a9556e55513c19169105089dc0",
+      "status": "",
+      "remote": "https://github.com/dooly-project/doolyprof.git",
+      "license_files": [
+        {
+          "path": ".cache/hbf-adoption/resources/doolyprof/LICENSE",
+          "bytes": 1083,
+          "sha256": "2b12bcc4f1a897c9aca6e0b86e483b6c9e65e7ba117cbbaa63937040acc801c7"
+        }
+      ]
+    },
+    {
+      "path": ".cache/hbf-adoption/resources/cacheable-by-design",
+      "commit": "03366ef1cb986a7ac6067c840f8ac58d8e5c8595",
+      "status": "",
+      "remote": "https://github.com/Shriniwas410/cacheable-by-design.git",
+      "license_files": [
+        {
+          "path": ".cache/hbf-adoption/resources/cacheable-by-design/LICENSE",
+          "bytes": 1079,
+          "sha256": "86122a76f297cb8f8a71207e1ed3c5e71feb49ee45480dde430b853ef2866ab2"
+        }
+      ]
+    },
+    {
+      "path": ".cache/hbf-adoption/resources/AISimulate",
+      "commit": "56eb607e69134ab11862834afa08d4b57706aeda",
+      "status": "",
+      "remote": "https://github.com/ai-dynamo/aisimulate.git",
+      "license_files": [
+        {
+          "path": ".cache/hbf-adoption/resources/AISimulate/LICENSE",
+          "bytes": 11952,
+          "sha256": "705c9170b57de145adccf1ec113a553ba08d7effab219aad84953c508f5ffe92"
+        }
+      ]
+    }
+  ],
+  "native_runtime": {
+    "path": ".cache/hbf-adoption/wheels/aisimulate-0.12.0.dev2-cp311-abi3-macosx_11_0_arm64.whl",
+    "bytes": 83801216,
+    "sha256": "7f3a60016227739b8705eb5d4b089249dd15d7c854c3be12a21303bb1844086c"
+  },
+  "native_runtime_note": "Historical published Mac ARM CPU wheel; not compiled from the newer pinned source checkout.",
+  "data_manifests": [
+    {
+      "path": "experiments/hbf_adoption/results/nvidia-tables-v2-20261104/manifest.json",
+      "bytes": 24851,
+      "sha256": "4e10a416bbbcb19925a63c734240b3d038e64badbbb69a4018046c9f7971e5ee"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/nvidia-native-systems-v2-20261104/manifest.json",
+      "bytes": 54435,
+      "sha256": "a84a3feab79eb2eb2c88d6b053882ee3976ef781d9d1a4d7ba59a9ead8e3e8cc"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/native-profiles-v4-20261104/manifest.json",
+      "bytes": 387453,
+      "sha256": "a8656eb6d257138da31cc8fed1cba5cf6f532f74b77aff135b11c4ed831fe0d6"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/fpm-evidence-20261104/manifest.json",
+      "bytes": 1904,
+      "sha256": "cf6703904f54f80149c2eca875efdf731230d20077c07636da8debf66366007e"
+    }
+  ]
+}

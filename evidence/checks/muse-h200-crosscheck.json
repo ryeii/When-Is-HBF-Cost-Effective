@@ -1,0 +1,127 @@
+{
+  "scope": "Independent local projection cross-check on the benchmark TP8 shapes. The served TP+EP schedule and precision differ from the study. The TF32/FP32 router is approximated by BF16 in these queries.",
+  "benchmark": "https://openkernelchallenge.dev/problems/muse_bf16_proj",
+  "reported_measurements": "https://thethings.ai/p/okc/muse-bf16-proj-report",
+  "rows": [
+    {
+      "tokens": 1,
+      "measured_us": 59.7,
+      "estimated_us": 56.6830811716985,
+      "signed_relative_error": -0.05053465374039379,
+      "operators_us": {
+        "fused_qkv_gate": 14.559525862455828,
+        "o": 6.684444430801604,
+        "pooler": 22.71555529700385,
+        "unpooler": 6.772444479995304,
+        "router_bf16_proxy": 5.951111101441914
+      },
+      "sources": {
+        "fused_qkv_gate": "silicon",
+        "o": "silicon",
+        "pooler": "silicon",
+        "unpooler": "silicon",
+        "router_bf16_proxy": "silicon"
+      }
+    },
+    {
+      "tokens": 8,
+      "measured_us": 75.1,
+      "estimated_us": 55.21185390541762,
+      "signed_relative_error": -0.26482218501441246,
+      "operators_us": {
+        "fused_qkv_gate": 14.05629830946336,
+        "o": 6.620444357395172,
+        "pooler": 21.51200009716882,
+        "unpooler": 7.019555403126612,
+        "router_bf16_proxy": 6.00355573826366
+      },
+      "sources": {
+        "fused_qkv_gate": "silicon",
+        "o": "silicon",
+        "pooler": "silicon",
+        "unpooler": "silicon",
+        "router_bf16_proxy": "silicon"
+      }
+    },
+    {
+      "tokens": 16,
+      "measured_us": 77.3,
+      "estimated_us": 67.66473186527706,
+      "signed_relative_error": -0.12464771196278057,
+      "operators_us": {
+        "fused_qkv_gate": 14.434509550680893,
+        "o": 6.692444284756978,
+        "pooler": 21.640888518757286,
+        "unpooler": 18.711111611790127,
+        "router_bf16_proxy": 6.18577789929178
+      },
+      "sources": {
+        "fused_qkv_gate": "silicon",
+        "o": "silicon",
+        "pooler": "silicon",
+        "unpooler": "silicon",
+        "router_bf16_proxy": "silicon"
+      }
+    },
+    {
+      "tokens": 32,
+      "measured_us": 78.4,
+      "estimated_us": 68.51400720676958,
+      "signed_relative_error": -0.12609684685242895,
+      "operators_us": {
+        "fused_qkv_gate": 14.487341419867468,
+        "o": 6.7591112520959635,
+        "pooler": 21.896888812383015,
+        "unpooler": 19.111999207072788,
+        "router_bf16_proxy": 6.258666515350342
+      },
+      "sources": {
+        "fused_qkv_gate": "silicon",
+        "o": "silicon",
+        "pooler": "silicon",
+        "unpooler": "silicon",
+        "router_bf16_proxy": "silicon"
+      }
+    },
+    {
+      "tokens": 128,
+      "measured_us": 86.9,
+      "estimated_us": 77.48983194876914,
+      "signed_relative_error": -0.10828731934673042,
+      "operators_us": {
+        "fused_qkv_gate": 17.376054231814585,
+        "o": 7.810666329330868,
+        "pooler": 25.69866677125295,
+        "unpooler": 20.14222244421641,
+        "router_bf16_proxy": 6.462222172154322
+      },
+      "sources": {
+        "fused_qkv_gate": "silicon",
+        "o": "silicon",
+        "pooler": "silicon",
+        "unpooler": "silicon",
+        "router_bf16_proxy": "silicon"
+      }
+    },
+    {
+      "tokens": 256,
+      "measured_us": 100.1,
+      "estimated_us": 93.81351061904425,
+      "signed_relative_error": -0.06280209171783957,
+      "operators_us": {
+        "fused_qkv_gate": 21.5557310804128,
+        "o": 8.85955575439665,
+        "pooler": 30.118223693635727,
+        "unpooler": 24.519999821980793,
+        "router_bf16_proxy": 8.760000268618265
+      },
+      "sources": {
+        "fused_qkv_gate": "silicon",
+        "o": "silicon",
+        "pooler": "silicon",
+        "unpooler": "silicon",
+        "router_bf16_proxy": "silicon"
+      }
+    }
+  ]
+}

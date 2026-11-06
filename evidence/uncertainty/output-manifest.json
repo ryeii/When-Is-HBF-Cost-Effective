@@ -1,0 +1,66 @@
+{
+  "inputs": [
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/sensitivity/manifest.json",
+      "bytes": 2454,
+      "sha256": "4628e008e96f966c293ac3a4eee4874041da80c27ab22435d1500e80c3016532"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/route-intervention-20261104/manifest.json",
+      "bytes": 2273,
+      "sha256": "293108bcfada6d5b02da06fcf34aff19f45ad3e4980d4b5942b9514265969d95"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/postprocess-20261105T192152Z/adoption/aggregate.json",
+      "bytes": 55612798,
+      "sha256": "17e6c5a3bf6f1d30f43c8707d275a7546325e361eeb4a3a6aa6e0e82ea9621d6"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/postprocess-20261105T192152Z/uncertainty/REPORT.md",
+      "bytes": 401,
+      "sha256": "af029bcbc7727c1f29744f4f7598ef7838995cfdcd81931536be05433d715987"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/postprocess-20261105T192152Z/uncertainty/analysis.json",
+      "bytes": 127575,
+      "sha256": "5da222c2d4fe8d195174281e1a5a1ae801149317233ce4144c72c9c6e79dde9e"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/postprocess-20261105T192152Z/uncertainty/lifetime-envelopes.csv",
+      "bytes": 1035131,
+      "sha256": "f2068a47f18769f8240b214a93a9d991ecbb030f00cda0d8706a9852af98fb69"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/postprocess-20261105T192152Z/uncertainty/route-intervention.csv",
+      "bytes": 8742,
+      "sha256": "7c4103b9bad31fd2b8e2af148c824ff6c39053a5b39e8cbb82dc8a347cea6ffe"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/postprocess-20261105T192152Z/uncertainty/runner.py",
+      "bytes": 17899,
+      "sha256": "7401e250e8138771119a0ceb54eb5551480539a80473c7bca9122772afaed52b"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/postprocess-20261105T192152Z/uncertainty/sensitivity-frontiers.csv",
+      "bytes": 35942,
+      "sha256": "9ffb77c08ea54581b8f6621d32d3d5347edbe389e4b74ca5459183b7a339a2ca"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/postprocess-20261105T192152Z/uncertainty/sensitivity-frontiers.pdf",
+      "bytes": 23296,
+      "sha256": "b585d45cfca8a72231b43aa2c5ba4ff7a266e6d6c845c5dfee76b64e02361eb8"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/postprocess-20261105T192152Z/uncertainty/sensitivity-frontiers.png",
+      "bytes": 163346,
+      "sha256": "8ee70847207167e5b04160079fbe14bbbf56345170594a5dc29c213c7e14e997"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/terminal-study-20261105T183101Z/postprocess-20261105T192152Z/uncertainty/sensitivity-frontiers.svg",
+      "bytes": 100448,
+      "sha256": "f5210f5b2e166ca4e233ec47a3ce5b90f9c0182e01d3713e5cf3b51ca540fa07"
+    }
+  ]
+}

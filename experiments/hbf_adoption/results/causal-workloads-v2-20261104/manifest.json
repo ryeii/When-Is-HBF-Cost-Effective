@@ -1,0 +1,45 @@
+{
+  "schema": "hbf-adoption.causal-shapes.v1",
+  "source": {
+    "path": ".cache/hbf-adoption/resources/TraceLab",
+    "commit": "5c6550b0d08beff983e9159fe2575e7a2334c8c1",
+    "status": "?? syfi_coding_trace.v0.0.1.jsonl.gz",
+    "remote": "https://github.com/uw-syfi/TraceLab.git"
+  },
+  "release_url": "https://github.com/uw-syfi/TraceLab/releases/download/v0.0.1/syfi_coding_trace.jsonl.gz",
+  "input": {
+    "path": ".cache/hbf-adoption/resources/TraceLab/syfi_coding_trace.v0.0.1.jsonl.gz",
+    "bytes": 53601226,
+    "sha256": "9d265eae69a31cae203848bea936f018148eed7ca8bf56050c5abe96da0b4e6b"
+  },
+  "runner": {
+    "path": "experiments/hbf_adoption/session_workloads.py",
+    "bytes": 14261,
+    "sha256": "ad220fb222387984657fdbb3e22d4e9e669125b33e133582406eae7395539c1b"
+  },
+  "outputs": [
+    {
+      "path": "experiments/hbf_adoption/results/causal-workloads-v2-20261104/causal-shapes.jsonl.gz",
+      "bytes": 13843455,
+      "sha256": "a2c62523e2dadfbdde772633d948779f5b7d4383ff51075ccd7442a3edc006e6"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/causal-workloads-v2-20261104/statistics.json",
+      "bytes": 2106,
+      "sha256": "9dbd4edd4910e85158e8b2449cb4559cc2c5b8dcc308b9ea9a620b55a00e0815"
+    }
+  ],
+  "duplicate_rule": "deduplicate identical normalized (user, provider, session, round_id) records copied across projects; conflicting normalized duplicates fail closed",
+  "admission_rule": "reported prefix counts are not token identities and cannot authorize reuse",
+  "release_rule": "successor = simulated predecessor completion + scenario delay; no original LLM latency replay",
+  "tool_policy": "all matching tools released together at simulated response completion; wait for maximum matched tool latency",
+  "limitations": [
+    "proprietary-model token lengths are transferred shapes, not open-model tokenization",
+    "no prompt/token IDs, first-token endpoint or exact streamed tool dependency graph",
+    "human gap uses last assistant event as an uncertain completion proxy",
+    "unresolved links remain unresolved; they cannot silently become zero-delay requests",
+    "prefix count bounds do not validate prefix cache correctness or cross-session sharing",
+    "deterministic session split is not independent hardware validation"
+  ],
+  "adoption_claim_eligible": false
+}

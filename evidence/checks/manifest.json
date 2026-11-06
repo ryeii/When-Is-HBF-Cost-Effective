@@ -1,0 +1,67 @@
+{
+  "status": "completed",
+  "schema": "hbf-adoption.route-intervention.v1",
+  "inputs": [
+    {
+      "path": ".cache/hbf-adoption/resources/cacheable-by-design/routing-lab/traces/general.npz",
+      "bytes": 2700380,
+      "sha256": "345240b70c7b4faaa997ec61e6dd3ae9dcd8bddef1201b2862f9ffda114a1c9f"
+    },
+    {
+      "path": "experiments/hbf_adoption/SENSITIVITY_PROTOCOL.md",
+      "bytes": 3110,
+      "sha256": "aba76f9f96ee271442d50e562c36056552e753f8251ea5c3ae66660fb4fc606e"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_engine.py",
+      "bytes": 36099,
+      "sha256": "cf2d7431be3da8360ef401da4827973ff55621b7f97b692bad4bdbc812b4ee3e"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_native.py",
+      "bytes": 3262,
+      "sha256": "3ccf7ad3b93c0b619fd3cebf4ea50415e65619dc70f63cb99569ece47d9f032c"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_resources.py",
+      "bytes": 5003,
+      "sha256": "4d22b776ec191341510d171686c9906fa82b9d0e1ab5d44874c7fb647ea12c28"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_sweep.py",
+      "bytes": 24394,
+      "sha256": "8bacb27935f56e9eff4dfbb28d377f7ca1525f6943bce91a6cf09e4bca1f6ce3"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_timing.py",
+      "bytes": 9030,
+      "sha256": "09955d624c1612a79f5b43703bcd06400642256a9278979bbd30c7f48c52c347"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_workloads.py",
+      "bytes": 4515,
+      "sha256": "00f661251add5dc2db2fd3fda86e219a2d512b1b200839e0f4f46215903c7e21"
+    }
+  ],
+  "runner": {
+    "path": "experiments/hbf_adoption/results/route-intervention-20261104/runner.py",
+    "bytes": 4213,
+    "sha256": "d711091a471fcdfa8d36e047e95d2369d5c618e9c781af39d37b8f5a83375c00"
+  },
+  "outputs": [
+    {
+      "path": "experiments/hbf_adoption/results/route-intervention-20261104/results.jsonl",
+      "bytes": 178061,
+      "sha256": "f2010e830a90709fca0e54bb3a0bbb587596ef90a69a1d3fbf8018829a6caac1"
+    }
+  ],
+  "counts": [
+    1,
+    8,
+    32
+  ],
+  "seed": 17,
+  "training_tokens": 2000,
+  "heldout_tokens": 6000,
+  "interpretation": "Q4 route identities transferred to BF16 payload; fixed-four-user program; no BF16 routing or request-tail validation claim."
+}

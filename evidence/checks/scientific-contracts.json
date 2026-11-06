@@ -1,0 +1,134 @@
+{
+  "status": "pass",
+  "tests": 64,
+  "failures": 0,
+  "errors": 0,
+  "input_hashes_unchanged": true,
+  "inputs": [
+    {
+      "path": "experiments/hbf_adoption/test_fixed_demand_search.py",
+      "bytes": 1384,
+      "sha256": "51c8896978cc4b6e2c8fd8bbb1ef9a5146a0e69a8af9e6f8984450a8d07621fc"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_metrics.py",
+      "bytes": 4825,
+      "sha256": "37941ef606be0cfacb73fb0d71a41f0171b2877a114541721b77c1f66c0678c2"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_route_intervention.py",
+      "bytes": 1541,
+      "sha256": "6b2b1fa394ebedb55301a92532c5218cfe431a46db4352f61bcfe33b9c67fc26"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_prefix_ablation.py",
+      "bytes": 1455,
+      "sha256": "f1e61394e91ca4173886c9ee855a9f8a2bb08131c9a8a1c4f7feb48b8418cdbb"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_projection_resources.py",
+      "bytes": 2371,
+      "sha256": "079fc8bc890849cad4753577a897c95c6f4492409058bc1c08123aa2ad0048ba"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_boundary_replay.py",
+      "bytes": 1892,
+      "sha256": "063f3743ac1eb9e57bdfedff22c32eb3e23240e5e989efafcc3c4df641f97bd7"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_result_rows.py",
+      "bytes": 1654,
+      "sha256": "b565b1993254e2adf482f2f9df22ba74f7a56e28572e185ce97149ee35bead53"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_projection_engine.py",
+      "bytes": 10439,
+      "sha256": "a23cdcb00d787e9d3fabcd1300ac5117678638bc0bc1e65a1bf846c5e95f0229"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_models.py",
+      "bytes": 1728,
+      "sha256": "89d99c7c98ae5231e37b0d594474e4173788bcccc9fe44d999803301007d3cb8"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_projection_analysis.py",
+      "bytes": 3134,
+      "sha256": "582b121a23fba98d2cafff63d0fb13d64f03fdec86b2f4e3509a2482abfabba8"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_runtime_runner.py",
+      "bytes": 1039,
+      "sha256": "2347555e15445a5a8e7d364fdfdb67dbc40d08df96ca87b3180dc4cf93ab5986"
+    },
+    {
+      "path": "experiments/hbf_adoption/test_workloads.py",
+      "bytes": 6625,
+      "sha256": "dc96ae038db182fcc54a30e8b1a7d48ae5d077887d801b1b9b74cabe687e5f9b"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_engine.py",
+      "bytes": 36099,
+      "sha256": "cf2d7431be3da8360ef401da4827973ff55621b7f97b692bad4bdbc812b4ee3e"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_timing.py",
+      "bytes": 9030,
+      "sha256": "09955d624c1612a79f5b43703bcd06400642256a9278979bbd30c7f48c52c347"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_workloads.py",
+      "bytes": 4515,
+      "sha256": "00f661251add5dc2db2fd3fda86e219a2d512b1b200839e0f4f46215903c7e21"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_sweep.py",
+      "bytes": 24394,
+      "sha256": "8bacb27935f56e9eff4dfbb28d377f7ca1525f6943bce91a6cf09e4bca1f6ce3"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_resources.py",
+      "bytes": 5003,
+      "sha256": "4d22b776ec191341510d171686c9906fa82b9d0e1ab5d44874c7fb647ea12c28"
+    },
+    {
+      "path": "experiments/hbf_adoption/projection_native.py",
+      "bytes": 3262,
+      "sha256": "3ccf7ad3b93c0b619fd3cebf4ea50415e65619dc70f63cb99569ece47d9f032c"
+    },
+    {
+      "path": "experiments/hbf_adoption/result_rows.py",
+      "bytes": 3250,
+      "sha256": "163e259d4e0c7057c58d229952b8ef43cd00a5f21835f42f18cf505a28b300a2"
+    },
+    {
+      "path": "experiments/hbf_adoption/fixed_demand_expansion.py",
+      "bytes": 7664,
+      "sha256": "578e835db8719f0d41a0b3e4f747062f8dfa69a03373687c12010507ea21aea0"
+    },
+    {
+      "path": "experiments/hbf_adoption/boundary_replay.py",
+      "bytes": 5666,
+      "sha256": "84fb525dc1a9d64baeed0f74fb998916c430f492f1c00efc71b8c58659f5da32"
+    },
+    {
+      "path": "experiments/hbf_adoption/runtime_runner.py",
+      "bytes": 884,
+      "sha256": "017507e295e50ed82f54dd12599f436e21f79fa9fc788ee2e80d3afc13b4047d"
+    },
+    {
+      "path": "experiments/hbf_adoption/model_catalog.py",
+      "bytes": 7893,
+      "sha256": "e15e29a4b2fec253b0dc9f0a514236db3ff767f1173ef1709d77315049c5e70c"
+    },
+    {
+      "path": "experiments/hbf_adoption/metrics.py",
+      "bytes": 7856,
+      "sha256": "1b294d23b14838529e6185f0722e9993975fa620b521766bf0345092ec96ed00"
+    },
+    {
+      "path": "experiments/hbf_adoption/evidence.py",
+      "bytes": 11648,
+      "sha256": "1e819e9cd3524f19b1ec03c94b38be40c5a79eda0aca48e7a56640a42006932c"
+    }
+  ]
+}

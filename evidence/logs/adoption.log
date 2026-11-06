@@ -1,0 +1,1 @@
+Analyzed 70718 outcomes; {'reference_not_found_in_pool': 102, 'no_gpu_acquisition_headroom': 229, 'no_passing_hbf_design_in_pool': 3, 'positive_headroom_within_pool': 82}

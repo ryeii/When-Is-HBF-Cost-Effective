@@ -1,0 +1,1 @@
+https://files.pythonhosted.org/packages/81/4f/ce980a09ab9284747889e957d0f15e8b77c8415797d418cecacdcdd040b3/aisimulate-0.12.0.dev2-cp311-abi3-manylinux_2_28_x86_64.whl#sha256=9b50283211b7927a7d80a87a98a2eb0d869376b6459f9eaf0d18acebef4593e4

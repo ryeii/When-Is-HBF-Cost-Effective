@@ -1,0 +1,1105 @@
+{
+  "schema": "hbf-adoption.device-diagnostic.v1",
+  "source": {
+    "path": ".cache/hbf-study/upstreams/HBFSim",
+    "commit": "3df0f3d6cf756535535e78c85764cf0728134be7",
+    "status": "",
+    "remote": "https://github.com/FlashLabAE/HBFSim.git"
+  },
+  "provenance": {
+    "repository": "/Users/anzhiyu/Desktop/LLMCompassScope/.cache/hbf-study/upstreams/HBFSim",
+    "git_commit": "3df0f3d6cf756535535e78c85764cf0728134be7",
+    "git_dirty": false,
+    "tree_hash": "e3a8014dbad5d3b656a2d96841436dda7a00f518",
+    "provenance_source": "run-time",
+    "simulator": {
+      "path": "/Users/anzhiyu/Desktop/LLMCompassScope/.cache/hbf-study/build/hbfsim",
+      "bytes": 1772248,
+      "sha256": "462f339aa1549eea396a328e980ef06e363c8c72f70df2c74494bb18ab3439b0"
+    },
+    "configs": [
+      {
+        "path": "/Users/anzhiyu/Desktop/LLMCompassScope/.cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+        "bytes": 2519,
+        "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+      }
+    ],
+    "runner": {
+      "path": "/Users/anzhiyu/Desktop/LLMCompassScope/experiments/hbf_adoption/device_sweep.py",
+      "bytes": 6086,
+      "sha256": "7f4e2e2ffe52fef644fdb41c1402ee125c5df4f275d978cc6d70d843d9e00a07"
+    },
+    "argv": [
+      "experiments/hbf_adoption/device_sweep.py",
+      "--out",
+      "experiments/hbf_adoption/results/device-service-20261104"
+    ],
+    "working_directory": "/Users/anzhiyu/Desktop/LLMCompassScope",
+    "timestamp_utc": "2026-11-04T07:17:31+00:00",
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "extra": {
+      "study_script": {
+        "path": "experiments/hbf_adoption/device_sweep.py",
+        "bytes": 6086,
+        "sha256": "7f4e2e2ffe52fef644fdb41c1402ee125c5df4f275d978cc6d70d843d9e00a07"
+      },
+      "scope": "device_service_only"
+    }
+  },
+  "paper_adoption_claim_eligible": false,
+  "new_hardware_measurement": false,
+  "ranges_per_point": 32,
+  "range_sizes_bytes": [
+    4096,
+    65536,
+    1048576,
+    16777216
+  ],
+  "queue_depths": [
+    1,
+    8,
+    32
+  ],
+  "qualifications": [
+    "hypothetical HBF timings and reduced-capacity geometry",
+    "no GPU compute, HBM staging, serving scheduler or network",
+    "no prefix writes, aging or sustained thermal steady state",
+    "A100 external-path aggregate calibration is hardware-specific",
+    "QD32 is extrapolation beyond the cited QD1/QD8 holdout"
+  ],
+  "points": [
+    {
+      "id": "hbf_assumed-b4096-qd1",
+      "tier": "hbf_assumed",
+      "range_bytes": 4096,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "51de7ecb59ae258ed7cb4bcc3e88d1917734553a88f37c5697eba764ffe25385",
+      "status": "simulated",
+      "total_elapsed_ns": 142800.5604938272,
+      "delivered_GB_per_second": 0.9178675458046667,
+      "completed_bytes": 131072,
+      "p50_range_latency_ns": 4462.517515432104,
+      "p99_range_latency_ns": 4462.517515432104,
+      "receipt_sha256": "1183896b5af2f86dfcc641820eec6623da992c1ce218a190f56439d18a1c61ba",
+      "wall_seconds": 0.2737811669940129
+    },
+    {
+      "id": "hbf_assumed-b4096-qd8",
+      "tier": "hbf_assumed",
+      "range_bytes": 4096,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "839805a62c1a48babe045d6987ade26f981adf1498ed2365b6408b2bf9a1e813",
+      "status": "simulated",
+      "total_elapsed_ns": 17892.736728395063,
+      "delivered_GB_per_second": 7.325430535843851,
+      "completed_bytes": 131072,
+      "p50_range_latency_ns": 4462.5175154321005,
+      "p99_range_latency_ns": 4500.184182098764,
+      "receipt_sha256": "e97e541d19ccbba67ca82c187a76f414e51598eb3d3fccc14ffe47e3e00e0de6",
+      "wall_seconds": 0.08464741602074355
+    },
+    {
+      "id": "hbf_assumed-b4096-qd32",
+      "tier": "hbf_assumed",
+      "range_bytes": 4096,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "03615151860babc52fc1abffd8e981285057da139a3bcb7f566fa9f4acc7a369",
+      "status": "simulated",
+      "total_elapsed_ns": 4723.517515432101,
+      "delivered_GB_per_second": 27.748812102797867,
+      "completed_bytes": 131072,
+      "p50_range_latency_ns": 4574.1841820987665,
+      "p99_range_latency_ns": 4723.517515432101,
+      "receipt_sha256": "956810dc152d3f1b34ee5eae379fb854c2602754773afb9f86e95bfc3bd1e6c3",
+      "wall_seconds": 0.08319120807573199
+    },
+    {
+      "id": "hbf_assumed-b65536-qd1",
+      "tier": "hbf_assumed",
+      "range_bytes": 65536,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "ad13d05bdba91fb52ce7b37ba7fe60f6c68c3575027d1002a2c4ca7d533c9189",
+      "status": "simulated",
+      "total_elapsed_ns": 146755.22716049384,
+      "delivered_GB_per_second": 14.290134944948306,
+      "completed_bytes": 2097152,
+      "p50_range_latency_ns": 4595.517515432094,
+      "p99_range_latency_ns": 4595.517515432119,
+      "receipt_sha256": "7570023a2f144177c80e823ff4b5b7b5e9ddbf0a7131fd6f5fa26236331e69ed",
+      "wall_seconds": 0.0818942500045523
+    },
+    {
+      "id": "hbf_assumed-b65536-qd8",
+      "tier": "hbf_assumed",
+      "range_bytes": 65536,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "c24e2b9f4fdf03c066906455115dfa709f776cc54f562e2ad296c265973239d3",
+      "status": "simulated",
+      "total_elapsed_ns": 19064.403395061745,
+      "delivered_GB_per_second": 110.00354726774327,
+      "completed_bytes": 2097152,
+      "p50_range_latency_ns": 4595.517515432096,
+      "p99_range_latency_ns": 5138.277515432104,
+      "receipt_sha256": "91f4d843837b979523a5e9953724dbf02faca0a4afc19f5ee3d86f12a871634c",
+      "wall_seconds": 0.08417387504596263
+    },
+    {
+      "id": "hbf_assumed-b65536-qd32",
+      "tier": "hbf_assumed",
+      "range_bytes": 65536,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "928230e5954b7d90dd3cec53e69ed4462f922c335b06096a38fe568da45647dc",
+      "status": "simulated",
+      "total_elapsed_ns": 5629.850848765437,
+      "delivered_GB_per_second": 372.50578324999174,
+      "completed_bytes": 2097152,
+      "p50_range_latency_ns": 5213.850848765435,
+      "p99_range_latency_ns": 5618.277515432104,
+      "receipt_sha256": "56ac853c5dcc7757391ceef36e66cdfa390e18f7fb6ade3acc68f657841fc14a",
+      "wall_seconds": 0.09060304099693894
+    },
+    {
+      "id": "hbf_assumed-b1048576-qd1",
+      "tier": "hbf_assumed",
+      "range_bytes": 1048576,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "07aafd3df71c71f073980f53f1de3fcc9b4f4ab23edffec5e989fe5462298489",
+      "status": "simulated",
+      "total_elapsed_ns": 169869.89382715998,
+      "delivered_GB_per_second": 197.530187627839,
+      "completed_bytes": 33554432,
+      "p50_range_latency_ns": 5303.684182098799,
+      "p99_range_latency_ns": 5347.517515431944,
+      "receipt_sha256": "b8cc6f27b826d60addc8ef8cc17deeb277f368f27651140a644c12cca8fc9be9",
+      "wall_seconds": 0.09402629104442894
+    },
+    {
+      "id": "hbf_assumed-b1048576-qd8",
+      "tier": "hbf_assumed",
+      "range_bytes": 1048576,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "e3a38fa4b55ad284b5a7ec39db8cd5d930d1d4fa25c165a56232b2a7fafb25d7",
+      "status": "simulated",
+      "total_elapsed_ns": 34269.850848765396,
+      "delivered_GB_per_second": 979.123957909167,
+      "completed_bytes": 33554432,
+      "p50_range_latency_ns": 8122.666666666644,
+      "p99_range_latency_ns": 10212.225252658352,
+      "receipt_sha256": "7bcbf7c0c80f9d24c359c596b30f08e83bacc332cf436a657e4e4eb4c7898fe4",
+      "wall_seconds": 0.08809966605622321
+    },
+    {
+      "id": "hbf_assumed-b1048576-qd32",
+      "tier": "hbf_assumed",
+      "range_bytes": 1048576,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "dc8865d00e517a0a50b9d7c03d769935bea5eaf048ec2fc4e785d7b6d748c196",
+      "status": "simulated",
+      "total_elapsed_ns": 34272.47858599164,
+      "delivered_GB_per_second": 979.0488865814004,
+      "completed_bytes": 33554432,
+      "p50_range_latency_ns": 19852.498050711933,
+      "p99_range_latency_ns": 34236.10525265831,
+      "receipt_sha256": "7f4085ef71f2ef954505563f61e3a26c184d61a61e979020b6cd706c54f32971",
+      "wall_seconds": 0.0952120409347117
+    },
+    {
+      "id": "hbf_assumed-b16777216-qd1",
+      "tier": "hbf_assumed",
+      "range_bytes": 16777216,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "e7083642b834a548ec08c16616549aa65eb8025102dce48ef5f83fb7b2372fcd",
+      "status": "simulated",
+      "total_elapsed_ns": 585006.4875011264,
+      "delivered_GB_per_second": 917.7178774431392,
+      "completed_bytes": 536870912,
+      "p50_range_latency_ns": 18290.145252658724,
+      "p99_range_latency_ns": 18310.63418209901,
+      "receipt_sha256": "ff68d9f181dd001cf5b21fb2a0d6d678857f8f805efad61550c1a8dbebdaa223",
+      "wall_seconds": 0.23186991701368243
+    },
+    {
+      "id": "hbf_assumed-b16777216-qd8",
+      "tier": "hbf_assumed",
+      "range_bytes": 16777216,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "e921e1c52adb04a99dadeaf2370e296006f94cc8058190baa576d838608ccac6",
+      "status": "simulated",
+      "total_elapsed_ns": 514274.478585992,
+      "delivered_GB_per_second": 1043.9384693483864,
+      "completed_bytes": 536870912,
+      "p50_range_latency_ns": 127999.99999999978,
+      "p99_range_latency_ns": 129580.41022433453,
+      "receipt_sha256": "cb234de7c803cd4fe3ce4fad7a4d091816dc06d6e256728e5a1d85cde71755ea",
+      "wall_seconds": 0.2698170830262825
+    },
+    {
+      "id": "hbf_assumed-b16777216-qd32",
+      "tier": "hbf_assumed",
+      "range_bytes": 16777216,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        }
+      ],
+      "transactions_sha256": "190e79de66df23d9458ae5d41f718b78698389d2be791c31cda9b9a1647ec8f8",
+      "status": "simulated",
+      "total_elapsed_ns": 514274.478585992,
+      "delivered_GB_per_second": 1043.9384693483864,
+      "completed_bytes": 536870912,
+      "p50_range_latency_ns": 266271.1647173788,
+      "p99_range_latency_ns": 509313.0439874519,
+      "receipt_sha256": "78ac817e8a5f946cd244b08553dfc8502d3ea9e3a0c3393975989bc03c364a3f",
+      "wall_seconds": 0.274272833019495
+    },
+    {
+      "id": "host_dram_a100_calibrated-b4096-qd1",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 4096,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "40c18553e1882763fbb23b191fa3f0e41fccc1733e26855497560fa0ae660d14",
+      "status": "simulated",
+      "total_elapsed_ns": 1077004.228528023,
+      "delivered_GB_per_second": 0.12170054353374304,
+      "completed_bytes": 131072,
+      "p50_range_latency_ns": 33656.38214150071,
+      "p99_range_latency_ns": 33656.382141500755,
+      "receipt_sha256": "2a80e57d74671671b90feb5cb7db3facdbed9d1d99f805b1ad99bf0e5b931c16",
+      "wall_seconds": 0.013640749966725707
+    },
+    {
+      "id": "host_dram_a100_calibrated-b4096-qd8",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 4096,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "b23619f852c60e0de18b4436ff13eb628b44aa5655b56a5328d4c760556487f0",
+      "status": "simulated",
+      "total_elapsed_ns": 191769.88125649097,
+      "delivered_GB_per_second": 0.6834858484617407,
+      "completed_bytes": 131072,
+      "p50_range_latency_ns": 40803.483642578125,
+      "p99_range_latency_ns": 67778.2953376067,
+      "receipt_sha256": "7fadc8ec3673f9fa3f852bed4faae418012fe25c21fc1ce1a3a9f3c68726f1cc",
+      "wall_seconds": 0.011557708028703928
+    },
+    {
+      "id": "host_dram_a100_calibrated-b4096-qd32",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 4096,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "cb1b2320317b26831542f30d3663019b7a69e044c24313bbab6b17a1642ae467",
+      "status": "simulated",
+      "total_elapsed_ns": 191769.88125649097,
+      "delivered_GB_per_second": 0.6834858484617407,
+      "completed_bytes": 131072,
+      "p50_range_latency_ns": 112713.13169899586,
+      "p99_range_latency_ns": 190188.7462653411,
+      "receipt_sha256": "c7349619e69e44e6278403114a474e37c9753d6dde9c9f7ce2e6b4388db80153",
+      "wall_seconds": 0.01201237493660301
+    },
+    {
+      "id": "host_dram_a100_calibrated-b65536-qd1",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 65536,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "0d450e722e54183e5cd0d4b46d8586eba6bd7399fe6094d46621a1d9a8ef27a6",
+      "status": "simulated",
+      "total_elapsed_ns": 1162200.539651286,
+      "delivered_GB_per_second": 1.804466551555072,
+      "completed_bytes": 2097152,
+      "p50_range_latency_ns": 36318.76686410268,
+      "p99_range_latency_ns": 36318.7668641028,
+      "receipt_sha256": "d4cd7d0a8ffb94bad17853509236cfd9dd40bb31bc03ef6906592c0dd397b960",
+      "wall_seconds": 0.012142374995164573
+    },
+    {
+      "id": "host_dram_a100_calibrated-b65536-qd8",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 65536,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "83c165e2b032441cd061594f442f1443fad84e169a962557fee680e66ab72cd3",
+      "status": "simulated",
+      "total_elapsed_ns": 194432.26597909292,
+      "delivered_GB_per_second": 10.786028694566077,
+      "completed_bytes": 2097152,
+      "p50_range_latency_ns": 40803.483642578125,
+      "p99_range_latency_ns": 70440.68006020863,
+      "receipt_sha256": "87389dc6fbc7b2ab7ae342dc32ced9bc3652c8223bcb90a84039a08bdec3f312",
+      "wall_seconds": 0.012060291948728263
+    },
+    {
+      "id": "host_dram_a100_calibrated-b65536-qd32",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 65536,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "8b25edbdcc6fbc338b00a4a5e160e48ece2b6f2a0a8478c4f7c8edd46ca8d000",
+      "status": "simulated",
+      "total_elapsed_ns": 194432.26597909292,
+      "delivered_GB_per_second": 10.786028694566077,
+      "completed_bytes": 2097152,
+      "p50_range_latency_ns": 115375.51642159779,
+      "p99_range_latency_ns": 192851.13098794303,
+      "receipt_sha256": "403bf36fc4b8d26a36a6a421cb4942ad8bc6c87703570d83dcfc9a39023eccb4",
+      "wall_seconds": 0.011824292014352977
+    },
+    {
+      "id": "host_dram_a100_calibrated-b1048576-qd1",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 1048576,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "0275f9253b1be67e254d5dfbf59989e0142b9916e615fff66fff438d93d5195f",
+      "status": "simulated",
+      "total_elapsed_ns": 2525341.5176234767,
+      "delivered_GB_per_second": 13.287086822053704,
+      "completed_bytes": 33554432,
+      "p50_range_latency_ns": 78916.92242573365,
+      "p99_range_latency_ns": 78916.92242573385,
+      "receipt_sha256": "51b8ea6e9002712dec3bce587298c80a8e68497f25a60c3de0a90f4d85220076",
+      "wall_seconds": 0.011604084051214159
+    },
+    {
+      "id": "host_dram_a100_calibrated-b1048576-qd8",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 1048576,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "d75aa8c0348db8efb3b5c427d01e1c78f14f507370514524e227370f70c76612",
+      "status": "simulated",
+      "total_elapsed_ns": 1487484.9198549995,
+      "delivered_GB_per_second": 22.557830033847264,
+      "completed_bytes": 33554432,
+      "p50_range_latency_ns": 363501.4186914236,
+      "p99_range_latency_ns": 386602.0978030447,
+      "receipt_sha256": "3659db45675c0ee15a4d31356b4b9d5bc63e5962b9ae2ba5cb2cdb6b41c551d8",
+      "wall_seconds": 0.012166792061179876
+    },
+    {
+      "id": "host_dram_a100_calibrated-b1048576-qd32",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 1048576,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "6491a0eadbf041d03d7a70a5ff1242104d46940c7721cc0c26ebd0dad0812a07",
+      "status": "simulated",
+      "total_elapsed_ns": 1487484.9198549995,
+      "delivered_GB_per_second": 22.557830033847264,
+      "completed_bytes": 33554432,
+      "p50_range_latency_ns": 783200.9211403672,
+      "p99_range_latency_ns": 1473399.2398807069,
+      "receipt_sha256": "99c651cc10fa419c0e444e876ee6c05e6afb4212694795fbd604586ed5ef545f",
+      "wall_seconds": 0.011715375003404915
+    },
+    {
+      "id": "host_dram_a100_calibrated-b16777216-qd1",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 16777216,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "146ee7f8f9ca5a5361a8e1d05fc1ed315f8b22684665b9d135b5bf64509aacfd",
+      "status": "simulated",
+      "total_elapsed_ns": 24335597.165178537,
+      "delivered_GB_per_second": 22.061135724592,
+      "completed_bytes": 536870912,
+      "p50_range_latency_ns": 760487.4114118302,
+      "p99_range_latency_ns": 760487.4114118324,
+      "receipt_sha256": "da58148040eecd79ca5ddbf33ad86934f275785639a32be563fc0d2ef1d9e985",
+      "wall_seconds": 0.011890292051248252
+    },
+    {
+      "id": "host_dram_a100_calibrated-b16777216-qd8",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 16777216,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "9290cf320f3547a69307368b46bf957ce632e9d9db96bd643e78e9bf4585033c",
+      "status": "simulated",
+      "total_elapsed_ns": 23297252.979570087,
+      "delivered_GB_per_second": 23.044386927110885,
+      "completed_bytes": 536870912,
+      "p50_range_latency_ns": 5815939.5014601955,
+      "p99_range_latency_ns": 5839051.033333416,
+      "receipt_sha256": "b1f0174d0453e8283861efb46262025243de6f38e525ea46c06f3b38ff308c1e",
+      "wall_seconds": 0.012094082892872393
+    },
+    {
+      "id": "host_dram_a100_calibrated-b16777216-qd32",
+      "tier": "host_dram_a100_calibrated",
+      "range_bytes": 16777216,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/host-dram.cfg",
+          "bytes": 1073,
+          "sha256": "f142d5975e1ee0f8795e3e86a792d81704728e53274c1b166a70956c8e121891"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-host-dram-timing.cfg",
+          "bytes": 1331,
+          "sha256": "0586ac861aaf8cc6bc78848f82c1e629c5fdd9a0dc47f02021841c948e55c73b"
+        }
+      ],
+      "transactions_sha256": "ccb80a386626aa00e76e86a961c3de2a32bb126456c127417ca5f8f0bfc2e38e",
+      "status": "simulated",
+      "total_elapsed_ns": 23297252.979570087,
+      "delivered_GB_per_second": 23.044386927110885,
+      "completed_bytes": 536870912,
+      "p50_range_latency_ns": 12028870.195490958,
+      "p99_range_latency_ns": 23071885.323888507,
+      "receipt_sha256": "7ef8ff7c0f6a06d9873256bbdb5ca15162abb95d9218cbcd5ab01af5acee0970",
+      "wall_seconds": 0.011982416966930032
+    },
+    {
+      "id": "nvme_a100_calibrated-b4096-qd1",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 4096,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "40c18553e1882763fbb23b191fa3f0e41fccc1733e26855497560fa0ae660d14",
+      "status": "simulated",
+      "total_elapsed_ns": 1432605.2586557737,
+      "delivered_GB_per_second": 0.09149205561550572,
+      "completed_bytes": 131072,
+      "p50_range_latency_ns": 44768.91433299286,
+      "p99_range_latency_ns": 44768.914332993096,
+      "receipt_sha256": "78342150e798dedd7d071095d1ea144967ab439b7f4d9be1a98174d90342cad7",
+      "wall_seconds": 0.012316958978772163
+    },
+    {
+      "id": "nvme_a100_calibrated-b4096-qd8",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 4096,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "b23619f852c60e0de18b4436ff13eb628b44aa5655b56a5328d4c760556487f0",
+      "status": "simulated",
+      "total_elapsed_ns": 214778.70551922743,
+      "delivered_GB_per_second": 0.6102653411711999,
+      "completed_bytes": 131072,
+      "p50_range_latency_ns": 44768.91433299289,
+      "p99_range_latency_ns": 78890.82752909884,
+      "receipt_sha256": "b66664d671ba57a10bd3abf74ede8a018a596c98df076126da2db7dee17b46bd",
+      "wall_seconds": 0.011793458019383252
+    },
+    {
+      "id": "nvme_a100_calibrated-b4096-qd32",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 4096,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "cb1b2320317b26831542f30d3663019b7a69e044c24313bbab6b17a1642ae467",
+      "status": "simulated",
+      "total_elapsed_ns": 202882.41344798313,
+      "delivered_GB_per_second": 0.6460490969741222,
+      "completed_bytes": 131072,
+      "p50_range_latency_ns": 123825.663890488,
+      "p99_range_latency_ns": 201301.27845683324,
+      "receipt_sha256": "b05264c47c1e19e8b748122953276e6b174fc5acb3028db517e2513655a22199",
+      "wall_seconds": 0.012014167034067214
+    },
+    {
+      "id": "nvme_a100_calibrated-b65536-qd1",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 65536,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "0d450e722e54183e5cd0d4b46d8586eba6bd7399fe6094d46621a1d9a8ef27a6",
+      "status": "simulated",
+      "total_elapsed_ns": 2208357.281299538,
+      "delivered_GB_per_second": 0.9496434375717965,
+      "completed_bytes": 2097152,
+      "p50_range_latency_ns": 69011.16504061059,
+      "p99_range_latency_ns": 69011.16504061059,
+      "receipt_sha256": "0eaaa26a783a8d7b8dd7a6c72c20d594c2f4fb5fe7fe02cfd94aa14ef0123838",
+      "wall_seconds": 0.011911749956198037
+    },
+    {
+      "id": "nvme_a100_calibrated-b65536-qd8",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 65536,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "83c165e2b032441cd061594f442f1443fad84e169a962557fee680e66ab72cd3",
+      "status": "simulated",
+      "total_elapsed_ns": 782587.431894463,
+      "delivered_GB_per_second": 2.6797670324493716,
+      "completed_bytes": 2097152,
+      "p50_range_latency_ns": 184148.71402680074,
+      "p99_range_latency_ns": 223005.52714552273,
+      "receipt_sha256": "44fcfc1b8c09744dd05818455213c0b0c5ee8f1fe350f24fedbb155b8403852a",
+      "wall_seconds": 0.01182437501847744
+    },
+    {
+      "id": "nvme_a100_calibrated-b65536-qd32",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 65536,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "8b25edbdcc6fbc338b00a4a5e160e48ece2b6f2a0a8478c4f7c8edd46ca8d000",
+      "status": "simulated",
+      "total_elapsed_ns": 782587.431894463,
+      "delivered_GB_per_second": 2.6797670324493716,
+      "completed_bytes": 2097152,
+      "p50_range_latency_ns": 425799.29846753704,
+      "p99_range_latency_ns": 775451.6692259245,
+      "receipt_sha256": "be16cba5cfa866b9186c1b5d37b5006657611390e88de1cd5e82599f925ed20e",
+      "wall_seconds": 0.011957208043895662
+    },
+    {
+      "id": "nvme_a100_calibrated-b1048576-qd1",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 1048576,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "0275f9253b1be67e254d5dfbf59989e0142b9916e615fff66fff438d93d5195f",
+      "status": "simulated",
+      "total_elapsed_ns": 13348154.090953778,
+      "delivered_GB_per_second": 2.5137881815988536,
+      "completed_bytes": 33554432,
+      "p50_range_latency_ns": 417129.8153423052,
+      "p99_range_latency_ns": 417129.8153423071,
+      "receipt_sha256": "bb05ecfcb0b4cc5f395830f6d2451c1d81c0bb9f7a931b9756c5357628fb8ad7",
+      "wall_seconds": 0.012287834077142179
+    },
+    {
+      "id": "nvme_a100_calibrated-b1048576-qd8",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 1048576,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "d75aa8c0348db8efb3b5c427d01e1c78f14f507370514524e227370f70c76612",
+      "status": "simulated",
+      "total_elapsed_ns": 11834350.085003978,
+      "delivered_GB_per_second": 2.8353421826280814,
+      "completed_bytes": 33554432,
+      "p50_range_latency_ns": 2946379.42442882,
+      "p99_range_latency_ns": 2980073.77165802,
+      "receipt_sha256": "e45dab9e72eb61786aefc7a0cfb09aab84c51a2cb9e0dcfedfec542613096a18",
+      "wall_seconds": 0.013532540993764997
+    },
+    {
+      "id": "nvme_a100_calibrated-b1048576-qd32",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 1048576,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "6491a0eadbf041d03d7a70a5ff1242104d46940c7721cc0c26ebd0dad0812a07",
+      "status": "simulated",
+      "total_elapsed_ns": 11834350.085003978,
+      "delivered_GB_per_second": 2.8353421826280814,
+      "completed_bytes": 33554432,
+      "p50_range_latency_ns": 6125739.950173137,
+      "p99_range_latency_ns": 11720177.882307362,
+      "receipt_sha256": "ef4863dcaff4a1ea7ec47dd8a6a6cc927aaaac024b7423c4d0a4bff341ddca3c",
+      "wall_seconds": 0.015426416997797787
+    },
+    {
+      "id": "nvme_a100_calibrated-b16777216-qd1",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 16777216,
+      "caller_queue_depth": 1,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "146ee7f8f9ca5a5361a8e1d05fc1ed315f8b22684665b9d135b5bf64509aacfd",
+      "status": "simulated",
+      "total_elapsed_ns": 190130919.55668873,
+      "delivered_GB_per_second": 2.823690714018393,
+      "completed_bytes": 536870912,
+      "p50_range_latency_ns": 5941591.236146584,
+      "p99_range_latency_ns": 5941591.236146599,
+      "receipt_sha256": "b39e98220a7ca8c99a6fe8615db4f240521916f98e6bf2c794dd567f8d024c78",
+      "wall_seconds": 0.015312458970583975
+    },
+    {
+      "id": "nvme_a100_calibrated-b16777216-qd8",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 16777216,
+      "caller_queue_depth": 8,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "9290cf320f3547a69307368b46bf957ce632e9d9db96bd643e78e9bf4585033c",
+      "status": "simulated",
+      "total_elapsed_ns": 188617115.5507388,
+      "delivered_GB_per_second": 2.8463531023279773,
+      "completed_bytes": 536870912,
+      "p50_range_latency_ns": 47142070.79086302,
+      "p99_range_latency_ns": 47175765.13809084,
+      "receipt_sha256": "153907e9ed8a7a4508be8874f2013cc9788f5000a9bc17e21cf26b45c54047a9",
+      "wall_seconds": 0.0152128329500556
+    },
+    {
+      "id": "nvme_a100_calibrated-b16777216-qd32",
+      "tier": "nvme_a100_calibrated",
+      "range_bytes": 16777216,
+      "caller_queue_depth": 32,
+      "configs": [
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/systems/miniquick/4hbm-4hbf.cfg",
+          "bytes": 2519,
+          "sha256": "37ab574948927626c1667255ee0c7898015996a3daab6e095c86903eb53df7b6"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/nvme-ssd.cfg",
+          "bytes": 844,
+          "sha256": "aea9fa9f31a0673e928bf45b608fb9abfe117808bc17d4198377e2d50f64f43a"
+        },
+        {
+          "path": ".cache/hbf-study/upstreams/HBFSim/configs/overlays/backing/calibrated/dana-a100-nvme-ssd-timing.cfg",
+          "bytes": 1339,
+          "sha256": "7088c65192928f3a258e4b79e747566981c8bc718a7c4b90e811c7af663818b2"
+        }
+      ],
+      "transactions_sha256": "ccb80a386626aa00e76e86a961c3de2a32bb126456c127417ca5f8f0bfc2e38e",
+      "status": "simulated",
+      "total_elapsed_ns": 188617115.5507388,
+      "delivered_GB_per_second": 2.8463531023279773,
+      "completed_bytes": 536870912,
+      "p50_range_latency_ns": 97279353.39344166,
+      "p99_range_latency_ns": 186790360.30759287,
+      "receipt_sha256": "f0244da5c449bd554c459868e48ee7f76ce7fb1eb72c0f554026783311e2f1c4",
+      "wall_seconds": 0.015408125007525086
+    }
+  ]
+}

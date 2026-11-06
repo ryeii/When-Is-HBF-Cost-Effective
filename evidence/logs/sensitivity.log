@@ -1,0 +1,6 @@
+llama31_405b-h200-short_chat-execution: pass (74.8s)
+qwen3_32b-rtx4090-short_chat-execution: pass (67.6s)
+kimi_k2-h200-short_chat-execution: pass (203.2s)
+qwen3_8b-rtx4090-long_rag-execution: pass (47.4s)
+qwen3_8b-h200-paused_personal-execution: pass (46.1s)
+qwen3_235b_a22b-rtx4090-short_chat-execution: pass (156.3s)

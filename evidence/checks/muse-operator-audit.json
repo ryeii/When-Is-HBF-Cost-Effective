@@ -1,0 +1,940 @@
+{
+  "scope": "Cross-geometry and cross-window transfer checks; not Muse serving validation.",
+  "expert_transfer": {
+    "donor": [
+      3072,
+      1024
+    ],
+    "holdout": [
+      4096,
+      2048
+    ],
+    "n": 108,
+    "median_ape": 0.1538702390332497,
+    "p95_ape": 0.5595264863295197
+  },
+  "sliding_decode_transfer": {
+    "held_out_window": 128,
+    "n": 3055,
+    "median_ape": 0.32310521644963197,
+    "p95_ape": 0.409185197645352
+  },
+  "graph_checks": [
+    {
+      "gpu": "h200",
+      "tp": 1,
+      "prefill": true,
+      "batch": 1,
+      "query": 512,
+      "context": 512,
+      "values_s": [
+        0.0003796086732070649,
+        0.00038397773987373154,
+        0.006386620017248111,
+        5.184533333333334e-06,
+        0.0008100110822489666
+      ],
+      "sources": {
+        "attention_shared/silicon": 3,
+        "attention_shared/empirical": 1,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 3,
+        "ffn_shared/empirical": 3,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 2,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 1,
+      "prefill": true,
+      "batch": 1,
+      "query": 512,
+      "context": 512,
+      "values_s": [
+        0.0022285698704708665,
+        0.0022493749498359457,
+        0.038149290136619204,
+        3.10381565778854e-05,
+        0.004829331709912598
+      ],
+      "sources": {
+        "attention_shared/silicon": 3,
+        "attention_shared/empirical": 1,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 3,
+        "ffn_shared/empirical": 3,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 2,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 1,
+      "prefill": true,
+      "batch": 4,
+      "query": 16384,
+      "context": 33152,
+      "values_s": [
+        0.15605345700875073,
+        0.059011500065368455,
+        0.11179604054930589,
+        0.0002826202666666667,
+        0.0008107640408327124
+      ],
+      "sources": {
+        "attention_shared/silicon": 3,
+        "attention_shared/empirical": 1,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 3,
+        "ffn_shared/empirical": 3,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 2,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 1,
+      "prefill": true,
+      "batch": 4,
+      "query": 16384,
+      "context": 33152,
+      "values_s": [
+        0.9311403467073516,
+        0.34949598582206387,
+        0.6634255035876863,
+        0.001691957891848265,
+        0.004833714996672029
+      ],
+      "sources": {
+        "attention_shared/silicon": 3,
+        "attention_shared/empirical": 1,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 3,
+        "ffn_shared/empirical": 3,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 2,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 1,
+      "prefill": false,
+      "batch": 1,
+      "query": 1,
+      "context": 512,
+      "values_s": [
+        0.00012809677928028878,
+        0.0001281053126136221,
+        0.0002975392037372113,
+        3.004266666666667e-06,
+        0.0008100102838114666
+      ],
+      "sources": {
+        "attention_shared/silicon": 3,
+        "attention_shared/empirical": 1,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 3,
+        "ffn_shared/empirical": 3,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 2,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 1,
+      "prefill": false,
+      "batch": 1,
+      "query": 1,
+      "context": 512,
+      "values_s": [
+        0.0005297226575236991,
+        0.000529763292444334,
+        0.0012345927254097688,
+        1.2726763911074867e-05,
+        0.0034184447655893585
+      ],
+      "sources": {
+        "attention_shared/silicon": 3,
+        "attention_shared/empirical": 1,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 3,
+        "ffn_shared/empirical": 3,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 2,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 1,
+      "prefill": false,
+      "batch": 16,
+      "query": 1,
+      "context": 32768,
+      "values_s": [
+        0.0006913757692424406,
+        0.00017261198318842087,
+        0.0029362636367822807,
+        3.068266666666667e-06,
+        0.0008375836127810819
+      ],
+      "sources": {
+        "attention_shared/silicon": 3,
+        "attention_shared/empirical": 1,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 3,
+        "ffn_shared/empirical": 3,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 2,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 1,
+      "prefill": false,
+      "batch": 16,
+      "query": 1,
+      "context": 32768,
+      "values_s": [
+        0.0029514926465752547,
+        0.000727299082211419,
+        0.01256381148729652,
+        1.3155539858159208e-05,
+        0.0035780838951735673
+      ],
+      "sources": {
+        "attention_shared/silicon": 3,
+        "attention_shared/empirical": 1,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 3,
+        "ffn_shared/empirical": 3,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 2,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 2,
+      "prefill": true,
+      "batch": 1,
+      "query": 512,
+      "context": 512,
+      "values_s": [
+        0.0002640123012960582,
+        0.00026619683462939154,
+        0.0035266847897314916,
+        4.8176853394063316e-05,
+        0.00040712220543085776
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 2,
+      "prefill": true,
+      "batch": 1,
+      "query": 512,
+      "context": 512,
+      "values_s": [
+        0.0015405444107050136,
+        0.0015509469503875533,
+        0.02103177842870595,
+        0.000288419539992304,
+        0.0024173637972424436
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 2,
+      "prefill": true,
+      "batch": 4,
+      "query": 16384,
+      "context": 33152,
+      "values_s": [
+        0.08329853599665368,
+        0.03400895800257239,
+        0.07813136107500576,
+        0.003534326809635417,
+        0.0004074317651702519
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 2,
+      "prefill": true,
+      "batch": 4,
+      "query": 16384,
+      "context": 33152,
+      "values_s": [
+        0.4960934209807738,
+        0.20066987899064892,
+        0.46239945486402095,
+        0.021158893551630916,
+        0.002419092595762989
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 2,
+      "prefill": false,
+      "batch": 1,
+      "query": 1,
+      "context": 512,
+      "values_s": [
+        8.870340688845474e-05,
+        8.87076735551214e-05,
+        0.0001834704033763091,
+        7.557226764456431e-06,
+        0.0004071214069933578
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 2,
+      "prefill": false,
+      "batch": 1,
+      "query": 1,
+      "context": 512,
+      "values_s": [
+        0.0003628399160650834,
+        0.00036286023352540085,
+        0.0007513677123859994,
+        3.201414905035944e-05,
+        0.0017117149088315712
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 2,
+      "prefill": false,
+      "batch": 16,
+      "query": 1,
+      "context": 32768,
+      "values_s": [
+        0.00035817793479925796,
+        0.00010442940543207172,
+        0.0015289857182430638,
+        8.258666551844279e-06,
+        0.0004189752801431741
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 2,
+      "prefill": false,
+      "batch": 16,
+      "query": 1,
+      "context": 32768,
+      "values_s": [
+        0.0015228207331198873,
+        0.00043487763385198687,
+        0.006529899908499039,
+        3.540996556080534e-05,
+        0.0017832533920744572
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 4,
+      "prefill": true,
+      "batch": 1,
+      "query": 512,
+      "context": 512,
+      "values_s": [
+        0.00021091779582336958,
+        0.00021201006249003626,
+        0.0020065203902119317,
+        5.695829126790364e-05,
+        0.00021227094718667268
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 4,
+      "prefill": true,
+      "batch": 1,
+      "query": 512,
+      "context": 512,
+      "values_s": [
+        0.00122469112390625,
+        0.0012298923937475198,
+        0.011933043028030943,
+        0.00034099122314743766,
+        0.0012508511192551612
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 4,
+      "prefill": true,
+      "batch": 4,
+      "query": 16384,
+      "context": 33152,
+      "values_s": [
+        0.04390816777460879,
+        0.02063385659587022,
+        0.06079116044206306,
+        0.004806995266666668,
+        0.00020879432164656384
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 4,
+      "prefill": true,
+      "batch": 4,
+      "query": 16384,
+      "context": 33152,
+      "values_s": [
+        0.2605326352898795,
+        0.1210254802893737,
+        0.358846028408127,
+        0.02877795592453592,
+        0.00122991322745229
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 4,
+      "prefill": false,
+      "batch": 1,
+      "query": 1,
+      "context": 512,
+      "values_s": [
+        5.9767844599985286e-05,
+        5.976997793331862e-05,
+        0.000132271470408588,
+        7.820266532198589e-06,
+        0.00021227014874917267
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 4,
+      "prefill": false,
+      "batch": 1,
+      "query": 1,
+      "context": 512,
+      "values_s": [
+        0.00024026054332743573,
+        0.00024027070205759446,
+        0.0005344755858427922,
+        3.312844594697705e-05,
+        0.000886280206591549
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 4,
+      "prefill": false,
+      "batch": 16,
+      "query": 1,
+      "context": 32768,
+      "values_s": [
+        0.00020120337871871915,
+        7.0318808581164e-05,
+        0.0008340948975866265,
+        1.0053546584383648e-05,
+        0.0002415219359604933
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 4,
+      "prefill": false,
+      "batch": 16,
+      "query": 1,
+      "context": 32768,
+      "values_s": [
+        0.0008497503117434668,
+        0.00028858412455856793,
+        0.0035504527514041836,
+        4.3105716411020156e-05,
+        0.0010224021376119264
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 8,
+      "prefill": true,
+      "batch": 1,
+      "query": 512,
+      "context": 512,
+      "values_s": [
+        0.00017942081778373273,
+        0.00017996695111706606,
+        0.0012218724053554007,
+        5.357749197438558e-05,
+        0.00010621898828684534
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 8,
+      "prefill": true,
+      "batch": 1,
+      "query": 512,
+      "context": 512,
+      "values_s": [
+        0.0010371320451257769,
+        0.0010397326800464118,
+        0.007236607764372088,
+        0.0003207514501372115,
+        0.0006159516800788338
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 8,
+      "prefill": true,
+      "batch": 4,
+      "query": 16384,
+      "context": 33152,
+      "values_s": [
+        0.024157207371980273,
+        0.013798754461227792,
+        0.04602490131592984,
+        0.004281230190983073,
+        0.00010571301642116851
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 8,
+      "prefill": true,
+      "batch": 4,
+      "query": 16384,
+      "context": 33152,
+      "values_s": [
+        0.14241832747834035,
+        0.08031993732162267,
+        0.2705735460351704,
+        0.025630367184517305,
+        0.0006127981495593361
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/mixed": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 8,
+      "prefill": false,
+      "batch": 1,
+      "query": 1,
+      "context": 512,
+      "values_s": [
+        4.5776916664336434e-05,
+        4.57779833310031e-05,
+        0.00010596458880591393,
+        8.158186721102398e-06,
+        0.00010621818984934533
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 8,
+      "prefill": false,
+      "batch": 1,
+      "query": 1,
+      "context": 512,
+      "values_s": [
+        0.0001809909167200326,
+        0.00018099599608511197,
+        0.0004230327495802431,
+        3.45599535134263e-05,
+        0.0004370197404017575
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "h200",
+      "tp": 8,
+      "prefill": false,
+      "batch": 16,
+      "query": 1,
+      "context": 32768,
+      "values_s": [
+        0.00012213123422000823,
+        5.5581976732368164e-05,
+        0.0005220806068096691,
+        1.3127786672846476e-05,
+        0.00011149554672319244
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    },
+    {
+      "gpu": "rtx4090",
+      "tp": 8,
+      "prefill": false,
+      "batch": 16,
+      "query": 1,
+      "context": 32768,
+      "values_s": [
+        0.000510707420060864,
+        0.00022537805720295684,
+        0.0022126440994632516,
+        5.6286867989758515e-05,
+        0.00046489930879744856
+      ],
+      "sources": {
+        "attention_shared/silicon": 4,
+        "attention/silicon": 1,
+        "sliding_attention/capped_full_attention_transfer": 1,
+        "ffn_shared/silicon": 6,
+        "expert_donor/silicon": 1,
+        "expert_geometry/donor_intermediate_width_scaled": 1,
+        "router/bf16_table_proxy_for_tf32": 1,
+        "norm_and_residual/bandwidth_model": 1,
+        "embedding/empirical": 1,
+        "embedding/silicon": 1,
+        "logits/silicon": 1
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "path": "experiments/hbf_adoption/results/nvidia-native-systems-v2-20261104/data/h200_sxm/moe/vllm/0.30.0/moe_perf.parquet",
+      "bytes": 615057,
+      "sha256": "65cf5c90129d75dc63f5a42f53461ee7752cae755c7c8432c86cf2024b6e48a7"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/nvidia-native-systems-v2-20261104/data/h200_sxm/attention/vllm/0.30.0/generation_attention_perf.parquet",
+      "bytes": 314163,
+      "sha256": "1a22ce664ed04aeffcd40440d4a156cb8bc94fe125b3ba5a7258cd1cf2a4c9d2"
+    }
+  ]
+}

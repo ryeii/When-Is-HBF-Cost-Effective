@@ -1,0 +1,9 @@
+# Fixed-demand screening audit
+
+The first screen ranked configured maximum batches before replaying several user densities. An inspection of the H200/Llama-405B short-chat case found that this can omit a resident TP8 batch-four candidate: low-batch latency and maximum-batch throughput extrema do not necessarily minimize four users' closed-loop service interval. This is a discovered search limitation, not a hardware result.
+
+Apply a second deterministic static screen to **all 720 model/platform/workload/count cells**, across every original legal layout and comparator. Estimate the actually available batch from four users, replica count and active-KV slots. Use the real design's memory allocation; do not silently grant a batch-four workspace to a configured batch-sixteen design. Rank both per-request path latency and stage occupancy. Retain the minimum estimated TTFT, minimum closed-loop decode interval, and the minimum joint TTFT/ITL normalized loss for each of the three interactive targets, within every comparator class. Treat these values only as ranking proxies. They are not SLO outcomes or an optimality certificate.
+
+Replay newly added candidates at four fixed users in **both windows 17 and 29**, with the same causal event engine and corrected boundary schedule. Merge this additional pool for every fixed-demand cost/frontier comparison, including negative cases and conventional CPU/DRAM controls. Sensitivity must reselect the union pool at its six anchors. Preserve the original search and all its outcomes; describe the expansion and its observed cause openly. The proportional-demand useful-capacity graphs retain the original static pool and are labeled as such.
+
+This audit improves demand matching but does not prove an exhaustive end-to-end optimum. Static ranking can still miss useful layouts or policies. No missing reference becomes an infinite saving.

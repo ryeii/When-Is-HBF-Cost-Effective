@@ -1,0 +1,433 @@
+{
+  "schema": "hbf-adoption.model-metadata.v1",
+  "retrieved_utc": "2026-11-04T17:39:46.157379+00:00",
+  "models": [
+    {
+      "id": "qwen3_8b",
+      "family": "dense",
+      "repository": "Qwen/Qwen3-8B",
+      "metadata": {
+        "status": "retrieved",
+        "url": "https://huggingface.co/api/models/Qwen/Qwen3-8B",
+        "file": {
+          "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_8b/repository.json",
+          "bytes": 9571,
+          "sha256": "8cd32c9ea96c0e298178b59e8e2129c52903f93b8483476d36079b192a4439a9"
+        },
+        "etag": "W/\"2563-0gcdVxtByjmJoHbBaBAmqeTJDCg\""
+      },
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "files": [
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_8b/config.json",
+            "bytes": 728,
+            "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30"
+          },
+          "etag": "\"d46195ac87f837ad233d02b2f80f148bf7c005e0\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/tokenizer_config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_8b/tokenizer_config.json",
+            "bytes": 9732,
+            "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+          },
+          "etag": "\"417d038a63fa3de29cfde265caedae14d1a58d92\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/tokenizer.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_8b/tokenizer.json",
+            "bytes": 11422654,
+            "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+          },
+          "etag": "\"6aec39639a0a2d1ca966356b8c2b8426a484f80ff80731f44fa8482040713bdf\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/model.safetensors.index.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_8b/model.safetensors.index.json",
+            "bytes": 32878,
+            "sha256": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc"
+          },
+          "etag": "\"2b85c00f1b118961cd7a477e2bba0fe197a4ce1a\""
+        }
+      ]
+    },
+    {
+      "id": "qwen3_32b",
+      "family": "dense",
+      "repository": "Qwen/Qwen3-32B",
+      "metadata": {
+        "status": "retrieved",
+        "url": "https://huggingface.co/api/models/Qwen/Qwen3-32B",
+        "file": {
+          "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_32b/repository.json",
+          "bytes": 9978,
+          "sha256": "aad0145028b448c4d63057520046d416bcaad0e3db02ab74e38bbcaa0e02ee53"
+        },
+        "etag": "W/\"26fa-n0xZ9tLGspbFlSpvqifLEosE2mw\""
+      },
+      "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "files": [
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-32B/resolve/9216db5781bf21249d130ec9da846c4624c16137/config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_32b/config.json",
+            "bytes": 728,
+            "sha256": "97e295b63283935788fac5e4f8860862a56d4089538cafc93f0431f2ebe483bb"
+          },
+          "etag": "\"d66d65fbc7960c2b3c254293f74df73b47fef6d3\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-32B/resolve/9216db5781bf21249d130ec9da846c4624c16137/tokenizer_config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_32b/tokenizer_config.json",
+            "bytes": 9732,
+            "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+          },
+          "etag": "\"417d038a63fa3de29cfde265caedae14d1a58d92\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-32B/resolve/9216db5781bf21249d130ec9da846c4624c16137/tokenizer.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_32b/tokenizer.json",
+            "bytes": 11422654,
+            "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+          },
+          "etag": "\"6aec39639a0a2d1ca966356b8c2b8426a484f80ff80731f44fa8482040713bdf\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-32B/resolve/9216db5781bf21249d130ec9da846c4624c16137/model.safetensors.index.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_32b/model.safetensors.index.json",
+            "bytes": 58330,
+            "sha256": "bed42c6c55274bc08a1f616bceb3bcb84b3f02cb6584c573bd18c6519291ecd0"
+          },
+          "etag": "\"2bc093f8069057e0b28f628398a05a273efd1297\""
+        }
+      ]
+    },
+    {
+      "id": "llama31_70b",
+      "family": "dense",
+      "repository": "meta-llama/Llama-3.1-70B-Instruct",
+      "metadata": {
+        "status": "retrieved",
+        "url": "https://huggingface.co/api/models/meta-llama/Llama-3.1-70B-Instruct",
+        "file": {
+          "path": "experiments/hbf_adoption/results/model-metadata-20261104/llama31_70b/repository.json",
+          "bytes": 24888,
+          "sha256": "3cc4047c6686437158a8a00b877249d19002fadcddbe481a248b2edf3fd4d639"
+        },
+        "etag": "W/\"6138-2qPOC7FKenKK1xK8c1TSaPyKEoU\""
+      },
+      "revision": "1605565b47bb9346c5515c34102e054115b4f98b",
+      "files": [
+        {
+          "status": "unavailable",
+          "url": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct/resolve/1605565b47bb9346c5515c34102e054115b4f98b/config.json",
+          "http_status": 401
+        },
+        {
+          "status": "unavailable",
+          "url": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct/resolve/1605565b47bb9346c5515c34102e054115b4f98b/tokenizer_config.json",
+          "http_status": 401
+        },
+        {
+          "status": "unavailable",
+          "url": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct/resolve/1605565b47bb9346c5515c34102e054115b4f98b/tokenizer.json",
+          "http_status": 401
+        },
+        {
+          "status": "unavailable",
+          "url": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct/resolve/1605565b47bb9346c5515c34102e054115b4f98b/model.safetensors.index.json",
+          "http_status": 401
+        }
+      ]
+    },
+    {
+      "id": "llama31_405b",
+      "family": "dense",
+      "repository": "meta-llama/Llama-3.1-405B-Instruct",
+      "metadata": {
+        "status": "retrieved",
+        "url": "https://huggingface.co/api/models/meta-llama/Llama-3.1-405B-Instruct",
+        "file": {
+          "path": "experiments/hbf_adoption/results/model-metadata-20261104/llama31_405b/repository.json",
+          "bytes": 62195,
+          "sha256": "795527275452921b8f7ec1316cde70a1342be2e2b07202cd03e038cad0285068"
+        },
+        "etag": "W/\"f2f3-/uyd1xJkVk99y5Bw8iyrpJrsBPo\""
+      },
+      "revision": "be673f326cab4cd22ccfef76109faf68e41aa5f1",
+      "files": [
+        {
+          "status": "unavailable",
+          "url": "https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct/resolve/be673f326cab4cd22ccfef76109faf68e41aa5f1/config.json",
+          "http_status": 401
+        },
+        {
+          "status": "unavailable",
+          "url": "https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct/resolve/be673f326cab4cd22ccfef76109faf68e41aa5f1/tokenizer_config.json",
+          "http_status": 401
+        },
+        {
+          "status": "unavailable",
+          "url": "https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct/resolve/be673f326cab4cd22ccfef76109faf68e41aa5f1/tokenizer.json",
+          "http_status": 401
+        },
+        {
+          "status": "unavailable",
+          "url": "https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct/resolve/be673f326cab4cd22ccfef76109faf68e41aa5f1/model.safetensors.index.json",
+          "http_status": 401
+        }
+      ]
+    },
+    {
+      "id": "qwen3_30b_a3b",
+      "family": "moe",
+      "repository": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "metadata": {
+        "status": "retrieved",
+        "url": "https://huggingface.co/api/models/Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "file": {
+          "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_30b_a3b/repository.json",
+          "bytes": 7858,
+          "sha256": "492116d9f69719a37037157b4327db83d0199ceb46432c572ed8cae25828d39b"
+        },
+        "etag": "W/\"1eb2-MMzoCLoktQBZlVDX9wDzD5oo6HU\""
+      },
+      "revision": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+      "files": [
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/resolve/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe/config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_30b_a3b/config.json",
+            "bytes": 963,
+            "sha256": "a1ee086a68d0cbfc87316da00ba4b8507bd1292978108e2496201a30a450f438"
+          },
+          "etag": "\"06163156f7465806e84062cf35818afa638b6221\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/resolve/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe/tokenizer_config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_30b_a3b/tokenizer_config.json",
+            "bytes": 9377,
+            "sha256": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3"
+          },
+          "etag": "\"51c1be0d9192e7f6e6596de71d0f07d58fbc32ac\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/resolve/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe/tokenizer.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_30b_a3b/tokenizer.json",
+            "bytes": 11422654,
+            "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+          },
+          "etag": "\"6aec39639a0a2d1ca966356b8c2b8426a484f80ff80731f44fa8482040713bdf\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/resolve/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe/model.safetensors.index.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_30b_a3b/model.safetensors.index.json",
+            "bytes": 1699758,
+            "sha256": "8dde190b862c7c80ec7403c6495de00c60bbaf246ed479cee4506284989c584c"
+          },
+          "etag": "\"52b3fc9153e5d0c39c1a89ef94ef10ab8d6cca98\""
+        }
+      ]
+    },
+    {
+      "id": "qwen3_235b_a22b",
+      "family": "moe",
+      "repository": "Qwen/Qwen3-235B-A22B",
+      "metadata": {
+        "status": "retrieved",
+        "url": "https://huggingface.co/api/models/Qwen/Qwen3-235B-A22B",
+        "file": {
+          "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_235b_a22b/repository.json",
+          "bytes": 14901,
+          "sha256": "2d9dcbb6297e8e90adad532f66b4a45080fc92d75f898413ed7bb2955908bade"
+        },
+        "etag": "W/\"3a35-JJrueUeU59ctbxlg2/Fzh0ksbyA\""
+      },
+      "revision": "8efa61729e24bd65b1d152b5ab5409052aa80e65",
+      "files": [
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B/resolve/8efa61729e24bd65b1d152b5ab5409052aa80e65/config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_235b_a22b/config.json",
+            "bytes": 965,
+            "sha256": "0ecd5d6fe6f2db6739e4e36ab06b88ebe7bd013ef31b9583f43796059a2b23a4"
+          },
+          "etag": "\"5366b39a2fad87796848caedcb3dadb585a5fa51\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B/resolve/8efa61729e24bd65b1d152b5ab5409052aa80e65/tokenizer_config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_235b_a22b/tokenizer_config.json",
+            "bytes": 9732,
+            "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+          },
+          "etag": "\"417d038a63fa3de29cfde265caedae14d1a58d92\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B/resolve/8efa61729e24bd65b1d152b5ab5409052aa80e65/tokenizer.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_235b_a22b/tokenizer.json",
+            "bytes": 11422654,
+            "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+          },
+          "etag": "\"6aec39639a0a2d1ca966356b8c2b8426a484f80ff80731f44fa8482040713bdf\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B/resolve/8efa61729e24bd65b1d152b5ab5409052aa80e65/model.safetensors.index.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/qwen3_235b_a22b/model.safetensors.index.json",
+            "bytes": 3332207,
+            "sha256": "53dd34fac4a29fc7ee58fa9d92c7892ea6884431c3bd3d0dc93def7bbd0b8b78"
+          },
+          "etag": "\"6fd4d7d3e71d471782dca132245c4bdab6c5e663\""
+        }
+      ]
+    },
+    {
+      "id": "deepseek_v3",
+      "family": "moe",
+      "repository": "deepseek-ai/DeepSeek-V3",
+      "metadata": {
+        "status": "retrieved",
+        "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V3",
+        "file": {
+          "path": "experiments/hbf_adoption/results/model-metadata-20261104/deepseek_v3/repository.json",
+          "bytes": 16172,
+          "sha256": "c2e99e1c3e17f2ac11b31d9f19733905cad415b3570214bc79fe922c9e7cff82"
+        },
+        "etag": "W/\"3f2c-w8esewdLIz/kpNyb9Z85fZLJGXQ\""
+      },
+      "revision": "e815299b0bcbac849fa540c768ef21845365c9eb",
+      "files": [
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3/resolve/e815299b0bcbac849fa540c768ef21845365c9eb/config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/deepseek_v3/config.json",
+            "bytes": 1660,
+            "sha256": "cbf0b95dc614de208a109bb5fd4e7eed11385e9c68411d2c17db5319443035d9"
+          },
+          "etag": "\"aec35a75d9bd54d463287e655724a0aeffdb38ce\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3/resolve/e815299b0bcbac849fa540c768ef21845365c9eb/tokenizer_config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/deepseek_v3/tokenizer_config.json",
+            "bytes": 3128,
+            "sha256": "637bcd1a08cf7c772ce6a383196b22930921c79c3c73223c5afc0c7f41545546"
+          },
+          "etag": "\"3ef38058ece03201b9af6baf99b28f16a020ad64\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3/resolve/e815299b0bcbac849fa540c768ef21845365c9eb/tokenizer.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/deepseek_v3/tokenizer.json",
+            "bytes": 7847652,
+            "sha256": "621ac2e32d0dba658404412318818aaa8ce8cda492e59830109d8da6b517fb41"
+          },
+          "etag": "\"51083c600ec00c7f57ae1af7fef7108c52ce7376\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3/resolve/e815299b0bcbac849fa540c768ef21845365c9eb/model.safetensors.index.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/deepseek_v3/model.safetensors.index.json",
+            "bytes": 8898324,
+            "sha256": "a2c5d238ab1e8301a117336e9797e0d3551cb8f6dc9dc787318b23d8f54c9248"
+          },
+          "etag": "\"210ab5c5ca880ad0003c3b0ea876eb05f3215136\""
+        }
+      ]
+    },
+    {
+      "id": "kimi_k2",
+      "family": "moe",
+      "repository": "moonshotai/Kimi-K2-Instruct",
+      "architecture_source": "https://moonshotai.github.io/Kimi-K2/",
+      "metadata": {
+        "status": "retrieved",
+        "url": "https://huggingface.co/api/models/moonshotai/Kimi-K2-Instruct",
+        "file": {
+          "path": "experiments/hbf_adoption/results/model-metadata-20261104/kimi_k2/repository.json",
+          "bytes": 10265,
+          "sha256": "049f7415097d32f6bd00a31718c981518df70ecdd92e15bce1897fe47dcc6c5d"
+        },
+        "etag": "W/\"2819-gp0q/CObnHT5bif5XC9hlcEh8xI\""
+      },
+      "revision": "fd1984e2b7a3350dbf7305fe73a4ede25c14de50",
+      "files": [
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/resolve/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/kimi_k2/config.json",
+            "bytes": 1725,
+            "sha256": "8c13ae1049df55f29b3bdcae69a562433f243ff70dac251d819ecad8dbdf7439"
+          },
+          "etag": "\"da5e6d57d441456dfff648b32e8334e4b1c2b3c0\""
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/resolve/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/tokenizer_config.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/kimi_k2/tokenizer_config.json",
+            "bytes": 3695,
+            "sha256": "5ba77d5822137ac3cb9337d2b84561d10425562cf8b8f2c74c91a832516a778d"
+          },
+          "etag": "\"8bfc1efdf0d93e143c98d7bf1199f4aad326c10b\""
+        },
+        {
+          "status": "unavailable",
+          "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/resolve/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/tokenizer.json",
+          "http_status": 404
+        },
+        {
+          "status": "retrieved",
+          "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/resolve/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/model.safetensors.index.json",
+          "file": {
+            "path": "experiments/hbf_adoption/results/model-metadata-20261104/kimi_k2/model.safetensors.index.json",
+            "bytes": 12529626,
+            "sha256": "78957a08bb224e141dbf63feba25b8c6f2b9825a89434054e2856a20c45a1eb7"
+          },
+          "etag": "\"6b344679b490b1e597990f963ac1d9506d33fe7e919fac167ca60787125f74df\""
+        }
+      ]
+    }
+  ],
+  "runner": {
+    "path": "experiments/hbf_adoption/fetch_model_metadata.py",
+    "bytes": 2789,
+    "sha256": "ea9f13baf85b198d98c5ea781840d0f00ee5670602ecedba8b1f36eb21e01b46"
+  },
+  "scope": "public metadata/tokenizer/index only; no checkpoint weights or remote code executed",
+  "checkpoint_runtime_validated": false
+}

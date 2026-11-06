@@ -1,0 +1,147 @@
+{
+  "schema": "hbf-adoption.fast-profile-fit.v1",
+  "gemm": {
+    "rtx4090": {
+      "compute_fraction": 0.9,
+      "memory_fraction": 0.9,
+      "launch_s": 4e-06,
+      "held_out_mape": 0.06606508819663555,
+      "held_out_points": 304,
+      "source": "packages/serving/LLMServingSim/profiler/perf/RTX4090/meta-llama/Llama-3.1-8B/bf16/tp1/dense.csv",
+      "source_sha256": "4f5b0623f1fa27033752cc54807a4089c39205c7132a0bb196520249d9d9140a",
+      "scope": "Only four BF16 GEMM operators, Llama-shaped, RTX4090. Other GPUs/shapes extrapolated. Not end-to-end validation."
+    },
+    "h100": {
+      "compute_fraction": 0.9000000000000002,
+      "memory_fraction": 0.9000000000000001,
+      "launch_s": 4e-06,
+      "held_out_mape": 0.07451459709235601,
+      "held_out_points": 235,
+      "fit_points": 835,
+      "source": "experiments/model_hardware/sources/h100_sxm-gemm_perf.parquet",
+      "source_sha256": "2e108312624bddc9fd8bebcfb544cd497f4e7254fb27494a4a6cf963fc699861",
+      "scope": "BF16 individual GEMM shapes only; no end-to-end or HBF calibration."
+    },
+    "h200": {
+      "compute_fraction": 0.9000000000000002,
+      "memory_fraction": 0.8000000000000002,
+      "launch_s": 4e-06,
+      "held_out_mape": 0.08454045466750096,
+      "held_out_points": 235,
+      "fit_points": 835,
+      "source": "experiments/model_hardware/sources/h200_sxm-gemm_perf.parquet",
+      "source_sha256": "caa4721c4885d086a53e34811f1fda6e9773ea53b0dc01b31fc20860c8eca2a4",
+      "scope": "BF16 individual GEMM shapes only; no end-to-end or HBF calibration."
+    },
+    "b200": {
+      "compute_fraction": 0.8000000000000003,
+      "memory_fraction": 0.8000000000000002,
+      "launch_s": 4e-06,
+      "held_out_mape": 0.09687911523914075,
+      "held_out_points": 235,
+      "fit_points": 835,
+      "source": "experiments/model_hardware/sources/b200_sxm-gemm_perf.parquet",
+      "source_sha256": "cb7e6b7d3fa0188efef005c8f26df142b7f230335cc5ad133bbb289b65384b3f",
+      "scope": "BF16 individual GEMM shapes only; no end-to-end or HBF calibration."
+    }
+  },
+  "attention": {
+    "rtx4090": {
+      "compute_fraction": 0.64,
+      "memory_fraction": 0.4,
+      "launch_s": 1.6e-05,
+      "fit_mape": 0.281305193689296,
+      "held_out_mape": 0.2766207032866776,
+      "held_out_p95_ape": 0.644974965059221,
+      "fit_points": 6495,
+      "held_out_points": 2148,
+      "source": {
+        "path": "packages/serving/LLMServingSim/profiler/perf/RTX4090/meta-llama/Llama-3.1-8B/bf16/tp1/attention.csv",
+        "bytes": 204129,
+        "sha256": "60f0669b5e85467b18d0ca241a826c4376c530b22b74b7b20748a1955cf61949"
+      },
+      "scope": "Per-layer Llama-3.1-8B BF16 attention; mixed/prefill/decode shapes, RTX4090 only."
+    },
+    "h200": {
+      "compute_fraction": 0.32,
+      "memory_fraction": 1.0,
+      "launch_s": 1.6e-05,
+      "fit_mape": 0.1582603661953353,
+      "held_out_mape": 0.16280457721679384,
+      "held_out_p95_ape": 0.7884987171943038,
+      "fit_points": 7834,
+      "held_out_points": 2694,
+      "source": {
+        "path": ".cache/hbf-adoption/resources/Frontier/data/profiling/compute/h200/Qwen3-235B-A22B/attention_kernel_only.csv",
+        "bytes": 42043553,
+        "sha256": "b19e0c99f8a935f046efb9224fd206dba620cba83cd0f1f7f5abc6c15db7fe94"
+      },
+      "scope": "Qwen3-235B BF16 pure attention kernels, H200 TP2/TP8; cross-model/MLA/mixed predictions are extrapolations."
+    }
+  },
+  "cpu": {
+    "moe": {
+      "eager_launch_span_s_per_layer": 0.0010031476668049151,
+      "prefill_exclusive_cpu_s": 0.0028367479487011833,
+      "decode_exclusive_cpu_s": 0.001408293773420155,
+      "scope": "Released Frontier CPU preparation/scheduler/output records; forward-drain excluded because it can include GPU waits. Eager issue span is a floor overlapping GPU execution; no eager launch floor on captured decode. Other architectures/platform hosts extrapolate this runtime."
+    },
+    "dense": {
+      "eager_launch_span_s_per_layer": 0.00034660735764191486,
+      "prefill_exclusive_cpu_s": 0.0021372478222474456,
+      "decode_exclusive_cpu_s": 0.0012308149443318447,
+      "scope": "Released Frontier CPU preparation/scheduler/output records; forward-drain excluded because it can include GPU waits. Eager issue span is a floor overlapping GPU execution; no eager launch floor on captured decode. Other architectures/platform hosts extrapolate this runtime."
+    }
+  },
+  "inputs": [
+    {
+      "path": ".cache/hbf-adoption/resources/Frontier/data/profiling/cpu_overhead/h200_dgx/Qwen3-235B-A22B/cpu_overheads.csv",
+      "bytes": 113492,
+      "sha256": "63d54f068ee6422a8cf08d7f784f07c10d05afdda17bd8cc1b3463d11d8b81f7"
+    },
+    {
+      "path": ".cache/hbf-adoption/resources/Frontier/data/profiling/cpu_overhead/h200_dgx/Qwen3-235B-A22B/cpu_overheads_kernel_only.csv",
+      "bytes": 12875,
+      "sha256": "dd2e856c1d4094aa0cef715c015f4f2dd7ff021eb522ef3cb4c61725638bf7b2"
+    },
+    {
+      "path": ".cache/hbf-adoption/resources/Frontier/data/profiling/cpu_overhead/h200_dgx/llama2_7b_dense_example/cpu_overheads.csv",
+      "bytes": 53812,
+      "sha256": "ecf87bed2779f1f4e74fd0754065d415b119ebbbbeea265050f302b56bd9b99f"
+    },
+    {
+      "path": ".cache/hbf-adoption/resources/Frontier/data/profiling/cpu_overhead/h200_dgx/llama2_7b_dense_example/cpu_overheads_kernel_only.csv",
+      "bytes": 14748,
+      "sha256": "355b694571d2ee3d0ed4db1ed3afae3cc484f1963a3bcd26b17b9a8c987aa7b9"
+    },
+    {
+      "path": "experiments/model_hardware/study.py",
+      "bytes": 31858,
+      "sha256": "d3c4570e5bebfeca7e0068fa1a937b1aa5bcf21f6ee376664086c3c37c7395db"
+    },
+    {
+      "path": "packages/gpu/LLMCompass/software_model/matmul.py",
+      "bytes": 63684,
+      "sha256": "5e2d7db2385483f1e4bacb8764ebf59cc77f7db6fc9513321433766e0f0e63f6"
+    },
+    {
+      "path": "packages/serving/LLMServingSim/profiler/core/stack.py",
+      "bytes": 14797,
+      "sha256": "fe674eb45d91c057d2d39140d2b056284aae688f19fc4f8099d0df651350c738"
+    }
+  ],
+  "source_reuse": "Actual previous calibration functions rerun on published raw operator measurements; no previous adoption results imported.",
+  "validation_scope": "Held-out operator shapes only. No generic percentage error bound or statistical confidence follows for full serving, MLA, distributed placement or HBF.",
+  "outputs": [
+    {
+      "path": "experiments/hbf_adoption/results/projection-profiles-20261104/attention-validation.json",
+      "bytes": 4636818,
+      "sha256": "5a9bac04c92d90ea429646fda92f8b6c8403000cd89d5fdd3b4c09b19edbeaca"
+    },
+    {
+      "path": "experiments/hbf_adoption/results/projection-profiles-20261104/gemm-validation.json",
+      "bytes": 932012,
+      "sha256": "a091bd70c4ad71acd55f1c38915000ce4a3c0f334f2687db9e2b7609ed3d3c81"
+    }
+  ]
+}
