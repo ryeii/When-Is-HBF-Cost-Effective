@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Re-run the CAL simulations or rebuild the paper from archived results."""
+"""Re-run the preprint's simulations or rebuild the paper from archived results."""
 import argparse
 from contextlib import contextmanager
 import fcntl

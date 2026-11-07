@@ -1,6 +1,6 @@
 # When Is High-Bandwidth Flash Cost-Effective for LLM Inference?
 
-This is the simulation artifact for the current IEEE Computer Architecture Letters draft. The study compares conventional memory and offload, shared-site HBF, and cascaded HBF across nine dense and MoE models, two GPU platforms, five workloads, and installations from 1 to 100 GPUs. It asks how HBF changes the installed cost at fixed demand and useful throughput at fixed GPU count.
+This repository contains the simulation artifact for the preprint. The study compares conventional memory and offload, shared-site HBF, and cascaded HBF across nine dense and MoE models, two GPU platforms, five workloads, and installations from 1 to 100 GPUs. It asks how HBF changes the installed cost at fixed demand and useful throughput at fixed GPU count.
 
 ## Quick start
 
@@ -48,7 +48,7 @@ The optional accelerator compiles the same event-model source and checks complet
 
 | Location | Contents |
 | --- | --- |
-| [`paper/`](paper/) | Current CAL manuscript, bibliography, original figure PDFs, and figure generator |
+| [`paper/`](paper/) | Preprint manuscript, bibliography, original figure PDFs, and figure generator |
 | [`experiments/hbf_adoption/`](experiments/hbf_adoption/) | Simulation and analysis code, contracts, methodology, frozen timing profiles, model geometries, workload shapes, and routing inputs |
 | [`evidence/`](evidence/) | Figure data, archived worker outcome rows, provenance and selected logs |
 | [`third_party/`](third_party/) | Upstream data and software notices |

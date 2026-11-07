@@ -1,4 +1,4 @@
-"""Build the CAL letter's vector figures from the released experiment tables."""
+"""Build the preprint's vector figures from the released experiment tables."""
 import argparse
 from collections import Counter, defaultdict
 import csv
