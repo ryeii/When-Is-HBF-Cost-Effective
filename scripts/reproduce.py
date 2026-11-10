@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Re-run the preprint's simulations or rebuild the paper from archived results."""
+"""Re-run the preprint's simulations or regenerate figures from archived results."""
 import argparse
 from contextlib import contextmanager
 import fcntl
@@ -13,7 +13,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPERIMENT = ROOT / "experiments/hbf_adoption"
-PAPER = ROOT / "paper"
+FIGURE_SCRIPT = ROOT / "scripts/make_figures.py"
 RUNS = ROOT / "runs"
 BUILD = ROOT / ".cache/hbf-adoption/compiled-event-model"
 PROOF = BUILD.parent / "compiled-check"
@@ -56,7 +56,7 @@ class Suite:
     def __init__(self, folder):
         self.folder = folder
         self.status = folder / "status.json"
-        inputs = [Path(__file__), ROOT / "requirements.txt", PAPER / "make_figures.py",
+        inputs = [Path(__file__), ROOT / "requirements.txt", FIGURE_SCRIPT,
                   *EXPERIMENT.glob("*.py"), *EXPERIMENT.glob("*.md"),
                   *(p for p in (EXPERIMENT / "results").rglob("*") if p.is_file())]
         digest = hashlib.sha256()
@@ -144,7 +144,7 @@ class Suite:
         self.step("muse-crosscheck", lambda out: simulate(
             "muse_projection_crosscheck.py", "--out", out), output_file=".json")
         figures = self.step("figures", lambda out: python(
-            PAPER / "make_figures.py", "--results", results, "--out", out), incremental=True)
+            FIGURE_SCRIPT, "--results", results, "--out", out), incremental=True)
         print(f"Results in {results.relative_to(ROOT)}. Figures in {figures.relative_to(ROOT)}.", flush=True)
 
     def smoke(self):
@@ -185,7 +185,7 @@ def show_status(folder):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("action", choices=("smoke", "full", "status", "tests", "compile", "figures", "paper"))
+    parser.add_argument("action", choices=("smoke", "full", "status", "tests", "compile", "figures"))
     parser.add_argument("--name", help="Output directory name under runs/ for full, smoke or status")
     parser.add_argument("--workers", type=int, default=2, help="Parallel simulator processes for full")
     args = parser.parse_args()
@@ -222,10 +222,7 @@ def main():
                 launch(simulate("check_compiled_runtime.py", "--out", PROOF, "--tests"))
             launch(python("-c", "from compiled_entry import check; check()"), cwd=EXPERIMENT)
         elif args.action == "figures":
-            launch(python(PAPER / "make_figures.py", "--out", RUNS / "figures"))
-        elif args.action == "paper":
-            launch(["latexmk", "-pdf", "-interaction=nonstopmode", "-halt-on-error",
-                    f"-outdir={RUNS / 'paper'}", "main.tex"], cwd=PAPER)
+            launch(python(FIGURE_SCRIPT, "--out", RUNS / "figures"))
     except KeyboardInterrupt:
         return 130
     except subprocess.CalledProcessError as error:

@@ -408,9 +408,10 @@ def sensitivity_audit(rows, directory):
 
 
 def main():
+    root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--results", type=Path, default=Path(__file__).resolve().parents[1] / "evidence")
-    parser.add_argument("--out", type=Path, default=Path(__file__).parent / "figures")
+    parser.add_argument("--results", type=Path, default=root / "evidence")
+    parser.add_argument("--out", type=Path, default=root / "runs/figures")
     args = parser.parse_args()
     path = args.results / "adoption"
 

@@ -1,6 +1,6 @@
 # When Is High-Bandwidth Flash Cost-Effective for LLM Inference?
 
-This repository contains the simulation artifact for the preprint. The study compares conventional memory and offload, shared-site HBF, and cascaded HBF across nine dense and MoE models, two GPU platforms, five workloads, and installations from 1 to 100 GPUs. It asks how HBF changes the installed cost at fixed demand and useful throughput at fixed GPU count.
+This repository contains the simulation artifact for the [preprint](https://arxiv.org/pdf/2611.11036). The study compares conventional memory and offload, shared-site HBF, and cascaded HBF across nine dense and MoE models, two GPU platforms, five workloads, and installations from 1 to 100 GPUs. It asks how HBF changes the installed cost at fixed demand and useful throughput at fixed GPU count.
 
 ## Quick start
 
@@ -12,13 +12,7 @@ Use Python 3.11 on Apple silicon macOS or on Linux with a compatible pinned whee
 .venv/bin/python scripts/reproduce.py figures
 ```
 
-The smoke run simulates one short-chat cell each for Qwen3-8B and Muse Spark Open. The figures command rebuilds all seven figures from the archived results and writes them to `runs/figures/`. The manuscript in `paper/` includes the original vector figures. To build it with TeX Live and `latexmk` installed, run:
-
-```sh
-.venv/bin/python scripts/reproduce.py paper
-```
-
-The PDF is written to `runs/paper/main.pdf`.
+The smoke run simulates one short-chat cell each for Qwen3-8B and Muse Spark Open. The figures command rebuilds all seven figures from the archived results and writes them to `runs/figures/`.
 
 ## Run the full suite
 
@@ -48,7 +42,7 @@ The optional accelerator compiles the same event-model source and checks complet
 
 | Location | Contents |
 | --- | --- |
-| [`paper/`](paper/) | Preprint manuscript, bibliography, original figure PDFs, and figure generator |
+| [`scripts/`](scripts/) | Environment setup, experiment commands, and figure generator |
 | [`experiments/hbf_adoption/`](experiments/hbf_adoption/) | Simulation and analysis code, contracts, methodology, frozen timing profiles, model geometries, workload shapes, and routing inputs |
 | [`evidence/`](evidence/) | Figure data, archived worker outcome rows, provenance and selected logs |
 | [`third_party/`](third_party/) | Upstream data and software notices |
